@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaitoon — Arabic Cuisine · Kollam</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">
+      <span class="loader-z">Z</span>
+      <span class="loader-rest">AITOON</span>
+    </div>
+    <div class="loader-line"></div>
+    <p class="loader-tagline">Chandanathope · Kollam</p>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#">
+      <span class="logo-z">Z</span>AITOON
+    </a>
+    <ul class="nav-links">
+      <li><a href="#story" data-text="Story">Story</a></li>
+      <li><a href="#menu" data-text="Menu">Menu</a></li>
+      <li><a href="#experience" data-text="Experience">Experience</a></li>
+      <li><a href="#gallery" data-text="Gallery">Gallery</a></li>
+      <li><a href="#location" data-text="Location">Location</a></li>
+    </ul>
+    <a class="nav-reserve" href="tel:08891504068">
+      <span class="reserve-dot"></span>
+      Call Now
+    </a>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <ul>
+        <li><a href="#story" class="mobile-link" onclick="closeMobile()"><span>01</span>Story</a></li>
+        <li><a href="#menu" class="mobile-link" onclick="closeMobile()"><span>02</span>Menu</a></li>
+        <li><a href="#experience" class="mobile-link" onclick="closeMobile()"><span>03</span>Experience</a></li>
+        <li><a href="#gallery" class="mobile-link" onclick="closeMobile()"><span>04</span>Gallery</a></li>
+        <li><a href="#location" class="mobile-link" onclick="closeMobile()"><span>05</span>Location</a></li>
+      </ul>
+      <div class="mobile-footer">
+        <a href="tel:08891504068">088915 04068</a>
+        <p>Chandanathope, Kollam</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       HERO
+  ═══════════════════════════════ -->
+  <section class="hero" id="home">
+
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="https://videos.bravebrand.com/Creative%20Studio/hf_20260418_004933_1563f5ed-46fe-44f6-af7d-502e0ee3f87a.mp4" type="video/mp4" />
+    </video>
+
+    <div class="hero-grain"></div>
+    <div class="hero-overlay"></div>
+
+
+    <!-- HERO TITLE BLOCK -->
+    <div class="hero-title-wrap">
+      <h1 class="hero-title">
+        <span class="hero-line" data-line="0">Where</span>
+        <span class="hero-line hero-line--accent" data-line="1">Malabar</span>
+        <span class="hero-line" data-line="2">Meets The</span>
+        <span class="hero-line hero-line--accent" data-line="3">Middle East</span>
+      </h1>
+
+      <p class="hero-sub" data-scroll-reveal>
+        Slow-cooked Yemani Mandhi · Afghani Chicken · Aromatic Dum Biryani
+      </p>
+
+      <div class="hero-ctas" data-scroll-reveal>
+        <a href="#menu" class="btn-primary">Explore Menu</a>
+        <a href="tel:08891504068" class="btn-ghost">📞 Reserve Now</a>
+      </div>
+    </div>
+
+    <!-- SCROLL CUE -->
+    <div class="scroll-cue">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════
+       MARQUEE
+  ═══════════════════════════════ -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Yemani Mandhi</span><span class="marquee-dot">✦</span>
+      <span>Afghani Chicken</span><span class="marquee-dot">✦</span>
+      <span>Dum Biryani</span><span class="marquee-dot">✦</span>
+      <span>Al Faham</span><span class="marquee-dot">✦</span>
+      <span>Shawarma</span><span class="marquee-dot">✦</span>
+      <span>Mutton Mandhi</span><span class="marquee-dot">✦</span>
+      <span>Fresh Juices</span><span class="marquee-dot">✦</span>
+      <span>Yemani Mandhi</span><span class="marquee-dot">✦</span>
+      <span>Afghani Chicken</span><span class="marquee-dot">✦</span>
+      <span>Dum Biryani</span><span class="marquee-dot">✦</span>
+      <span>Al Faham</span><span class="marquee-dot">✦</span>
+      <span>Shawarma</span><span class="marquee-dot">✦</span>
+      <span>Mutton Mandhi</span><span class="marquee-dot">✦</span>
+      <span>Fresh Juices</span><span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       STORY
+  ═══════════════════════════════ -->
+  <section class="story-section" id="story">
+
+    <div class="story-left">
+    <div class="story-img-wrap">
+
+    <div class="story-cinematic-overlay"></div>
+
+    <div class="story-grain"></div>
+
+    <div class="story-img-inner">
+
+        <canvas id="shawarmaCanvas"></canvas>
+
+    </div>
+
+    </div>
+    </div>
+
+    <div class="story-right">
+      <p class="section-eyebrow" data-scroll-reveal>Our Story</p>
+      <h2 class="section-title" data-scroll-reveal>
+        A Taste of<br><em>Arabia</em><br>In Kerala
+      </h2>
+      <div class="story-text" data-scroll-reveal>
+        <p>
+          Nestled opposite the Reliance Petrol Pump in Chandanathope, Zaitoon was born from a single obsession — to bring the slow-fire soul of Yemeni cooking to the heart of Kollam.
+        </p>
+        <p>
+          Every grain of rice in our Mandhi is seasoned with patience. Every cut of chicken in our Al Faham is marinated overnight. We don't rush flavour — we build it, layer by layer, the way it has been done across Arabia for centuries.
+        </p>
+        <p>
+          From humble porotta to grand Mutton Mandhi platters, Zaitoon is where Malabar hospitality meets the warmth of Middle Eastern tradition.
+        </p>
+      </div>
+      <div class="story-awards" data-scroll-reveal>
+        <div class="award-pill">🏆 Golden Bite Award — FavHiker</div>
+        <div class="award-pill">⭐ 4.2 · Zomato · 1700+ Reviews</div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════
+       SPECIALITY STRIP
+  ═══════════════════════════════ -->
+  <section class="specialty-section">
+    <div class="specialty-grid">
+
+      <div class="specialty-card" data-scroll-reveal>
+        <div class="sc-num">01</div>
+        <div class="sc-icon">🔥</div>
+        <h3 class="sc-title">Slow Fire Cooking</h3>
+        <p class="sc-text">Our Mandhi is slow-roasted in sealed pits, locking in every drop of flavour and smoke.</p>
+      </div>
+
+      <div class="specialty-card" data-scroll-reveal data-delay="100">
+        <div class="sc-num">02</div>
+        <div class="sc-icon">🌿</div>
+        <h3 class="sc-title">Yemeni Heritage</h3>
+        <p class="sc-text">Authentic spice blends sourced from traditional Yemeni culinary practices.</p>
+      </div>
+
+      <div class="specialty-card" data-scroll-reveal data-delay="200">
+        <div class="sc-num">03</div>
+        <div class="sc-icon">🍚</div>
+        <h3 class="sc-title">Dum Biryani</h3>
+        <p class="sc-text">Sealed and pressure-cooked for hours to create the perfect aromatic Malabar biryani.</p>
+      </div>
+
+      <div class="specialty-card" data-scroll-reveal data-delay="300">
+        <div class="sc-num">04</div>
+        <div class="sc-icon">🫙</div>
+        <h3 class="sc-title">House Marinades</h3>
+        <p class="sc-text">Every protein marinated overnight in our proprietary spice blends — never rushed.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       MENU
+  ═══════════════════════════════ -->
+  <section class="menu-section" id="menu">
+
+    <div class="menu-header">
+      <p class="section-eyebrow" data-scroll-reveal>What We Serve</p>
+      <h2 class="section-title" data-scroll-reveal>The Menu</h2>
+      <p class="menu-subtitle" data-scroll-reveal>A symphony of Arabic and Malabar flavours</p>
+    </div>
+
+    <div class="menu-tabs" data-scroll-reveal>
+      <button class="tab active" data-cat="all">All</button>
+      <button class="tab" data-cat="mandi">Mandi</button>
+      <button class="tab" data-cat="biryani">Biryani</button>
+      <button class="tab" data-cat="chicken">Chicken</button>
+      <button class="tab" data-cat="snacks">Snacks</button>
+      <button class="tab" data-cat="drinks">Drinks</button>
+    </div>
+
+    <div class="menu-list" id="menuList">
+
+      <div class="menu-item" data-cat="mandi" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Signature</span>
+          <h4 class="mi-name">Yemani Chicken Mandhi</h4>
+          <p class="mi-desc">Whole chicken slow-roasted in a sealed pit with fragrant basmati, saffron, and Yemeni spice blend. The centrepiece of our table.</p>
+          <span class="mi-badge">🔥 Bestseller</span>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🍖</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="mandi" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Arabic</span>
+          <h4 class="mi-name">Mutton Mandhi</h4>
+          <p class="mi-desc">Slow-cooked tender mutton served atop aromatic Yemeni rice with raita, salad and special green chutney.</p>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🐑</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="mandi" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Special</span>
+          <h4 class="mi-name">Al Faham Mandi</h4>
+          <p class="mi-desc">Grilled Al Faham chicken over a bed of fragrant Mandhi rice — smoky, charred and deeply spiced.</p>
+          <span class="mi-badge">⭐ Award Winner</span>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🍗</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="mandi" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Arabic</span>
+          <h4 class="mi-name">Kondattam Mandhi</h4>
+          <p class="mi-desc">A rich, intensely flavoured Mandhi variation with a caramelised crust and deep smoky finish.</p>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🥘</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="biryani" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Malabar</span>
+          <h4 class="mi-name">Chicken Dum Biryani</h4>
+          <p class="mi-desc">Dum-sealed biryani with marinated chicken, whole spices and caramelised onions. Served with pachadi and pickle.</p>
+          <span class="mi-badge">🔥 Most Ordered</span>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🍚</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="biryani" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Hyderabad</span>
+          <h4 class="mi-name">Hyderabadi Chicken Biryani</h4>
+          <p class="mi-desc">Hyderabadi-style layered biryani with kewra water, fried onions and slow-cooked chicken.</p>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🫕</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="chicken" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Afghani</span>
+          <h4 class="mi-name">Afghani Chicken</h4>
+          <p class="mi-desc">Creamy, mild Afghani-style marinated chicken grilled over charcoal. Served with mint chutney and roomali.</p>
+          <span class="mi-badge">⭐ Chef's Pick</span>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🔥</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="chicken" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Grilled</span>
+          <h4 class="mi-name">Honey Chicken Breast</h4>
+          <p class="mi-desc">Tender chicken breast glazed with wildflower honey and chilli — sweet heat, perfectly balanced.</p>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🍯</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="chicken" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Fried</span>
+          <h4 class="mi-name">100gm Chicken Fry</h4>
+          <p class="mi-desc">Crispy Malabar-style fried chicken with a fiery masala crust. From ₹108.</p>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🍳</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="snacks" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Street</span>
+          <h4 class="mi-name">Kerala Porotta</h4>
+          <p class="mi-desc">Layered, flaky Malabar porotta served with beef roast or chicken curry — a local favourite.</p>
+          <span class="mi-badge">❤️ Fan Favourite</span>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🫓</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="snacks" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Arabic</span>
+          <h4 class="mi-name">Shawarma</h4>
+          <p class="mi-desc">Slow-rotisserie chicken wrapped in soft bread with garlic sauce, pickles, and fresh vegetables.</p>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🌯</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="snacks" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Malabar</span>
+          <h4 class="mi-name">Beef Roast</h4>
+          <p class="mi-desc">Slow-cooked beef with Malabar masala, coconut slices and curry leaves. Served with porotta.</p>
+          <span class="mi-badge">🌶️ Spicy</span>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🥩</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="drinks" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Fresh</span>
+          <h4 class="mi-name">Ginger Lime Cooler</h4>
+          <p class="mi-desc">Fresh Kerala lime with crushed ginger, rock salt and soda. The ultimate heat companion.</p>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">🍋</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="drinks" data-scroll-reveal>
+        <div class="mi-left">
+          <span class="mi-tag">Arabic</span>
+          <h4 class="mi-name">Qahwa — Arabic Coffee</h4>
+          <p class="mi-desc">Traditional saffron-infused Arabic coffee with cardamom. A ritual, not just a drink.</p>
+          <span class="mi-badge">✨ Traditional</span>
+        </div>
+        <div class="mi-right">
+          <div class="mi-icon">☕</div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════
+       EXPERIENCE
+  ═══════════════════════════════ -->
+  <section class="experience-section" id="experience">
+
+    <div class="exp-header">
+      <p class="section-eyebrow light" data-scroll-reveal>The Zaitoon Way</p>
+      <h2 class="section-title light" data-scroll-reveal>The Experience</h2>
+    </div>
+
+    <div class="exp-grid">
+
+      <div class="exp-card" data-scroll-reveal>
+        <div class="exp-number">01</div>
+        <div class="exp-icon">🛋️</div>
+        <h3 class="exp-title">Private Dining Rooms</h3>
+        <p class="exp-text">Intimate, curtained family booths for gatherings, celebrations, and quiet meals — away from the crowd.</p>
+      </div>
+
+      <div class="exp-card" data-scroll-reveal data-delay="120">
+        <div class="exp-number">02</div>
+        <div class="exp-icon">🌙</div>
+        <h3 class="exp-title">Cinematic Ambience</h3>
+        <p class="exp-text">Warm amber lighting, Arabic lanterns, and premium interiors that transport you from Chandanathope to the Middle East.</p>
+      </div>
+
+      <div class="exp-card" data-scroll-reveal data-delay="240">
+        <div class="exp-number">03</div>
+        <div class="exp-icon">🤝</div>
+        <h3 class="exp-title">Attentive Service</h3>
+        <p class="exp-text">Our staff are trained in the art of Arabic hospitality — welcoming, knowledgeable and always present.</p>
+      </div>
+
+      <div class="exp-card" data-scroll-reveal data-delay="360">
+        <div class="exp-number">04</div>
+        <div class="exp-icon">🚗</div>
+        <h3 class="exp-title">Ample Parking</h3>
+        <p class="exp-text">Dedicated parking space opposite the Reliance Petrol Pump. AC and Non-AC seating available.</p>
+      </div>
+
+    </div>
+
+    <!-- OPENING HOURS BLOCK -->
+    <div class="hours-block" data-scroll-reveal>
+      <div class="hours-left">
+        <h3>Opening Hours</h3>
+        <p>We're open every day of the week, rain or shine.</p>
+      </div>
+      <div class="hours-right">
+        <div class="hours-row">
+          <span>Monday – Thursday</span>
+          <span>12:00 PM – 11:30 PM</span>
+        </div>
+        <div class="hours-row">
+          <span>Friday – Sunday</span>
+          <span>12:00 PM – 11:30 PM</span>
+        </div>
+        <div class="hours-note">
+          <span class="live-dot"></span>
+          Currently Open
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════
+       GALLERY
+  ═══════════════════════════════ -->
+  <section class="gallery-section" id="gallery">
+    <div class="gallery-header">
+      <p class="section-eyebrow" data-scroll-reveal>The Spread</p>
+      <h2 class="section-title" data-scroll-reveal>Food in Frame</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gi-tall" data-scroll-reveal>
+        <img src="https://images.unsplash.com/photo-1618889482923-38250401a84e?w=700&q=80" alt="Mandi" loading="lazy"/>
+        <div class="gi-label">Mandhi Feast</div>
+      </div>
+      <div class="gallery-item" data-scroll-reveal data-delay="100">
+        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=700&q=80" alt="Biryani" loading="lazy"/>
+        <div class="gi-label">Dum Biryani</div>
+      </div>
+      <div class="gallery-item" data-scroll-reveal data-delay="200">
+        <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=700&q=80" alt="Grilled Chicken" loading="lazy"/>
+        <div class="gi-label">Afghani Grill</div>
+      </div>
+      <div class="gallery-item gi-wide" data-scroll-reveal data-delay="300">
+        <img src="https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=1200&q=80" alt="Arabic spread" loading="lazy"/>
+        <div class="gi-label">Arabic Spread</div>
+      </div>
+      <div class="gallery-item" data-scroll-reveal data-delay="400">
+        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=700&q=80" alt="Shawarma" loading="lazy"/>
+        <div class="gi-label">House Shawarma</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       REVIEWS
+  ═══════════════════════════════ -->
+  <section class="reviews-section" id="reviews">
+
+    <div class="reviews-header">
+      <p class="section-eyebrow" data-scroll-reveal>Guest Voices</p>
+      <h2 class="section-title" data-scroll-reveal>What They Say</h2>
+      <div class="rating-summary" data-scroll-reveal>
+        <div class="rating-big">4.2</div>
+        <div class="rating-detail">
+          <div class="stars-row">★★★★<span class="half-star">★</span></div>
+          <p>Based on 1,700+ reviews across platforms</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-track-wrap">
+      <div class="reviews-track" id="reviewsTrack">
+
+        <div class="review-card">
+          <div class="rc-top">
+            <div class="rc-stars">★★★★★</div>
+            <div class="rc-source">Google</div>
+          </div>
+          <p class="rc-text">"One of the best Mandi spots in Kollam. The Yemani Chicken Mandhi is absolutely unmatched — the slow-roasted aroma hits you before the dish even arrives."</p>
+          <div class="rc-author">
+            <div class="rc-avatar">I</div>
+            <div>
+              <strong>Imamudeen AR</strong>
+              <span>Local Guide</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-top">
+            <div class="rc-stars">★★★★★</div>
+            <div class="rc-source">Zomato</div>
+          </div>
+          <p class="rc-text">"Great experience — amazing food and service. Staff are extremely knowledgeable and make great recommendations. The ambience is very welcoming and charming."</p>
+          <div class="rc-author">
+            <div class="rc-avatar">A</div>
+            <div>
+              <strong>Abhinav KP</strong>
+              <span>Local Guide · 64 Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-top">
+            <div class="rc-stars">★★★★★</div>
+            <div class="rc-source">Google</div>
+          </div>
+          <p class="rc-text">"We've ordered porotta and beef roast many times. It's very tasty — somewhere we feel that authentic Malabari flavour in the beef roast. Highly recommended!"</p>
+          <div class="rc-author">
+            <div class="rc-avatar">A</div>
+            <div>
+              <strong>Adila H A</strong>
+              <span>Regular Customer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-top">
+            <div class="rc-stars">★★★★★</div>
+            <div class="rc-source">Google</div>
+          </div>
+          <p class="rc-text">"Huge variety of dishes while being very budget-friendly. The food is fresh, the service is quick, and the place has a great vibe. Will definitely come back."</p>
+          <div class="rc-author">
+            <div class="rc-avatar">M</div>
+            <div>
+              <strong>Maanas Manoj</strong>
+              <span>Local Guide · 155 Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-top">
+            <div class="rc-stars">★★★★★</div>
+            <div class="rc-source">Justdial</div>
+          </div>
+          <p class="rc-text">"Great ambience, good parking, AC seating, prompt service. The special Al Faham is super tasty. Good quantity and value for money. Zaitoon never disappoints."</p>
+          <div class="rc-author">
+            <div class="rc-avatar">N</div>
+            <div>
+              <strong>Naseer Nasar</strong>
+              <span>Verified Diner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-top">
+            <div class="rc-stars">★★★★★</div>
+            <div class="rc-source">Google</div>
+          </div>
+          <p class="rc-text">"Very tasty and palatable food. Staff are extremely polite. Rates are very reasonable. Zaitoon is our go-to for Mandi nights in Kollam."</p>
+          <div class="rc-author">
+            <div class="rc-avatar">H</div>
+            <div>
+              <strong>Hari Sankar</strong>
+              <span>Local Guide</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="reviews-nav">
+        <button class="rev-btn" id="revPrev">←</button>
+        <button class="rev-btn" id="revNext">→</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════
+       DELIVERY STRIP
+  ═══════════════════════════════ -->
+  <section class="delivery-section">
+    <div class="delivery-inner" data-scroll-reveal>
+      <div class="delivery-text">
+        <h3>Order Online</h3>
+        <p>Available on Swiggy, Zomato & Justdial for home delivery across Kollam.</p>
+      </div>
+      <div class="delivery-platforms">
+        <a class="platform-pill" href="#" target="_blank">🛵 Swiggy</a>
+        <a class="platform-pill" href="#" target="_blank">🍽️ Zomato</a>
+        <a class="platform-pill" href="#" target="_blank">📋 Justdial</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       LOCATION
+  ═══════════════════════════════ -->
+  <section class="location-section" id="location">
+
+    <div class="location-header">
+      <p class="section-eyebrow light" data-scroll-reveal>Find Us</p>
+      <h2 class="section-title light" data-scroll-reveal>Come, Dine With Us</h2>
+    </div>
+
+    <div class="location-grid">
+
+      <div class="location-info" data-scroll-reveal>
+        <div class="loc-row">
+          <div class="loc-icon">📍</div>
+          <div>
+            <strong>Address</strong>
+            <p>WJHR+75, Opposite Reliance Petrol Pump,<br>Kilikkollur, Chandanathope, Kottamkara,<br>Kerala 691014</p>
+          </div>
+        </div>
+        <div class="loc-row">
+          <div class="loc-icon">📞</div>
+          <div>
+            <strong>Phone</strong>
+            <p><a href="tel:08891504068">088915 04068</a></p>
+          </div>
+        </div>
+        <div class="loc-row">
+          <div class="loc-icon">🕐</div>
+          <div>
+            <strong>Hours</strong>
+            <p>12:00 PM – 11:30 PM · Every Day</p>
+          </div>
+        </div>
+        <div class="loc-row">
+          <div class="loc-icon">🚗</div>
+          <div>
+            <strong>Parking</strong>
+            <p>Ample free parking available · AC & Non-AC seating</p>
+          </div>
+        </div>
+        <a class="directions-btn" href="https://maps.google.com/?q=Zaitoon+Restaurant+Kollam+Chandanathope" target="_blank">
+          Get Directions →
+        </a>
+      </div>
+
+      <div class="location-map" data-scroll-reveal data-delay="200">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.3!2d76.596!3d8.8932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05ff5b5b5b5b5b%3A0x1234!2sZaitoon+Restaurant%2C+Chandanathope!5e0!3m2!1sen!2sin!4v1234567890"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Zaitoon Location"
+        ></iframe>
+        <a class="map-overlay-btn" href="https://maps.google.com/?q=Zaitoon+Restaurant+Kollam" target="_blank">
+          🗺️ Open in Google Maps
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════
+       FOOTER
+  ═══════════════════════════════ -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><span>Z</span>AITOON</div>
+        <p class="footer-desc">Authentic Yemeni, Arabic &amp; Malabar cuisine in the heart of Chandanathope, Kollam.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/zaitoon_united.kollam" target="_blank" class="social-pill">📸 Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li>Yemani Mandhi</li>
+          <li>Mutton Mandhi</li>
+          <li>Al Faham Mandi</li>
+          <li>Dum Biryani</li>
+          <li>Afghani Chicken</li>
+          <li>Shawarma</li>
+          <li>Kerala Porotta</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Experience</h4>
+        <ul>
+          <li>Private Dining</li>
+          <li>Family Seating</li>
+          <li>AC Seating</li>
+          <li>Takeaway</li>
+          <li>Home Delivery</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="tel:08891504068">088915 04068</a></li>
+          <li>Chandanathope, Kollam</li>
+          <li>12 PM – 11:30 PM</li>
+          <li><a href="https://www.zomato.com" target="_blank">Zomato</a></li>
+          <li><a href="https://www.swiggy.com" target="_blank">Swiggy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Zaitoon Restaurant, Kollam. All rights reserved.</p>
+      <p class="footer-craft">Crafted with ❤️ in Kerala</p>
+    </div>
+
+  </footer>
+
+  <!-- FLOATING CALL BTN (mobile) -->
+  <a class="floating-call" href="tel:08891504068">
+    📞 Call Us
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
