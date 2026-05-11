@@ -5153,7 +5153,10 @@ color: transparent !important;
 
   letter-spacing: 1px;
 }
+.hero-line[data-line="1"]{
 
+  letter-spacing: -2px;
+}
 
 /* ════════════════════════════════
    CINEMA CURTAIN REVEAL
