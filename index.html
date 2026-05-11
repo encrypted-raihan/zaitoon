@@ -299,162 +299,416 @@
     </svg>
   </div>
 
-  <!-- ═══════════════════════════════
-       MENU
-  ═══════════════════════════════ -->
-  <section class="menu-section" id="menu">
-    <!-- Top arch header ornament -->
-    <div class="menu-arch-header" aria-hidden="true">
-      <svg viewBox="0 0 300 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M30,60 L30,30 Q150,0 270,30 L270,60" stroke="#E85D1E" stroke-width="1" fill="none" opacity="0.35"/>
-        <path d="M55,60 L55,36 Q150,12 245,36 L245,60" stroke="#F4A61B" stroke-width="0.6" fill="none" opacity="0.2"/>
-        <g transform="translate(150,12)">
-          <polygon points="0,-10 2.5,-3 10,-3 4,1 6.5,8 0,4 -6.5,8 -4,1 -10,-3 -2.5,-3" fill="#F4A61B" opacity="0.6"/>
-        </g>
-      </svg>
+<!-- ═══════════════════════════════
+     MENU
+═══════════════════════════════ -->
+<section class="menu-section" id="menu">
+
+  <!-- TOP ARCH -->
+  <div class="menu-arch-header" aria-hidden="true">
+
+    <svg viewBox="0 0 300 60" fill="none">
+
+      <path
+        d="M30,60 L30,30 Q150,0 270,30 L270,60"
+        stroke="#E85D1E"
+        stroke-width="1"
+        opacity="0.35"
+      />
+
+      <path
+        d="M55,60 L55,36 Q150,12 245,36 L245,60"
+        stroke="#F4A61B"
+        stroke-width="0.6"
+        opacity="0.2"
+      />
+
+    </svg>
+
+  </div>
+
+  <!-- HEADER -->
+  <div class="menu-header">
+
+    <p class="section-eyebrow" data-scroll-reveal>
+      What We Serve
+    </p>
+
+    <h2 class="section-title" data-scroll-reveal>
+      The Menu
+    </h2>
+
+    <p class="menu-subtitle" data-scroll-reveal>
+      A symphony of Arabic and Malabar flavours
+    </p>
+
+  </div>
+
+  <!-- SPOTLIGHT -->
+  <div class="menu-spotlight" data-scroll-reveal>
+
+    <button class="spot-card" data-cat="mandi">
+      <span class="spot-kicker">Chef’s Focus</span>
+      <strong>Mandhi</strong>
+      <span class="spot-note">
+        Slow fire, saffron, smoke
+      </span>
+    </button>
+
+    <button class="spot-card" data-cat="biryani">
+      <span class="spot-kicker">Top Seller</span>
+      <strong>Biryani</strong>
+      <span class="spot-note">
+        Dum sealed, aromatic, rich
+      </span>
+    </button>
+
+    <button class="spot-card" data-cat="chicken">
+      <span class="spot-kicker">Grill House</span>
+      <strong>Chicken</strong>
+      <span class="spot-note">
+        Charcoal, Afghani, crispy
+      </span>
+    </button>
+
+    <button class="spot-card" data-cat="snacks">
+      <span class="spot-kicker">Quick Bites</span>
+      <strong>Snacks</strong>
+      <span class="spot-note">
+        Porotta, shawarma, roast
+      </span>
+    </button>
+
+  </div>
+
+  <!-- PREVIEW -->
+  <div class="menu-preview-shell">
+
+    <div class="menu-preview-head">
+
+      <span class="preview-line"></span>
+
+      <p>
+        Curated highlights from the kitchen
+      </p>
+
+      <span class="preview-line"></span>
+
     </div>
 
-    <div class="menu-header">
-      <p class="section-eyebrow" data-scroll-reveal>What We Serve</p>
-      <h2 class="section-title" data-scroll-reveal>The Menu</h2>
-      <p class="menu-subtitle" data-scroll-reveal>A symphony of Arabic and Malabar flavours</p>
-    </div>
+    <div class="menu-preview-row">
 
-    <div class="menu-tabs" data-scroll-reveal>
-      <button class="tab active" data-cat="all">All</button>
-      <button class="tab" data-cat="mandi">Mandi</button>
-      <button class="tab" data-cat="biryani">Biryani</button>
-      <button class="tab" data-cat="chicken">Chicken</button>
-      <button class="tab" data-cat="snacks">Snacks</button>
-      <button class="tab" data-cat="drinks">Drinks</button>
-    </div>
+      <!-- CARD -->
+      <article class="dish-preview-card">
 
-    <div class="menu-list" id="menuList">
-      <div class="menu-item" data-cat="mandi" data-scroll-reveal>
-        <div class="mi-left">
-          <span class="mi-tag">Signature</span>
-          <h4 class="mi-name">Yemani Chicken Mandhi</h4>
-          <p class="mi-desc">Whole chicken slow-roasted in a sealed pit with fragrant basmati, saffron, and Yemeni spice blend. The centrepiece of our table.</p>
-          <span class="mi-badge">🔥 Bestseller</span>
+        <div class="dish-preview-image">
+          <img src="assets/menu/mandhi.jpg" alt="">
         </div>
+
+        <div class="dish-preview-content">
+
+          <span class="dish-preview-tag">
+            Signature
+          </span>
+
+          <h3>
+            Yemani Mandhi
+          </h3>
+
+          <p>
+            Fragrant basmati, charcoal chicken,
+            saffron smoke.
+          </p>
+
+        </div>
+
+      </article>
+
+      <!-- CARD -->
+      <article class="dish-preview-card">
+
+        <div class="dish-preview-image">
+          <img src="assets/menu/biryani.jpg" alt="">
+        </div>
+
+        <div class="dish-preview-content">
+
+          <span class="dish-preview-tag">
+            Popular
+          </span>
+
+          <h3>
+            Malabar Biryani
+          </h3>
+
+          <p>
+            Dum cooked layers with deep spice
+            and ghee aroma.
+          </p>
+
+        </div>
+
+      </article>
+
+      <!-- CARD -->
+      <article class="dish-preview-card">
+
+        <div class="dish-preview-image">
+          <img src="assets/menu/alfaham.jpg" alt="">
+        </div>
+
+        <div class="dish-preview-content">
+
+          <span class="dish-preview-tag">
+            Charcoal
+          </span>
+
+          <h3>
+            Peri Al Faham
+          </h3>
+
+          <p>
+            Flame grilled chicken with smoky
+            Arabic marinade.
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+    <!-- PREMIUM CTA -->
+    <div class="menu-bottom-glass">
+
+      <div class="menu-bottom-left">
+
+        <span class="menu-bottom-kicker">
+          Full Culinary Collection
+        </span>
+
+        <h3>
+          Explore Every Arabic &
+          Malabar Signature
+        </h3>
+
+      </div>
+
+      <button class="menu-bottom-btn">
+
+        <span>
+          Explore Full Menu
+        </span>
+
+        <div class="menu-btn-circle">
+          ↓
+        </div>
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- HIDDEN MENU -->
+  <div class="full-menu-hidden" id="fullMenu">
+
+    <!-- TABS -->
+    <div class="menu-tabs" data-scroll-reveal>
+
+      <button class="tab active" data-cat="all">
+        All
+      </button>
+
+      <button class="tab" data-cat="mandi">
+        Mandi
+      </button>
+
+      <button class="tab" data-cat="biryani">
+        Biryani
+      </button>
+
+      <button class="tab" data-cat="chicken">
+        Chicken
+      </button>
+
+      <button class="tab" data-cat="snacks">
+        Snacks
+      </button>
+
+      <button class="tab" data-cat="drinks">
+        Drinks
+      </button>
+
+    </div>
+
+    <!-- MENU LIST -->
+    <div class="menu-list" id="menuList">
+
+      <!-- ITEM -->
+      <div class="menu-item" data-cat="mandi">
+
+        <div class="mi-left">
+
+          <span class="mi-tag">
+            Signature
+          </span>
+
+          <h4 class="mi-name">
+            Yemani Chicken Mandhi
+          </h4>
+
+          <p class="mi-desc">
+            Whole chicken slow-roasted in a sealed pit with fragrant basmati,
+            saffron, and Yemeni spice blend.
+          </p>
+
+          <span class="mi-badge">
+            🔥 Bestseller
+          </span>
+
+        </div>
+
         <div class="mi-right">
           <div class="mi-icon">🍖</div>
         </div>
+
       </div>
-      <div class="menu-item" data-cat="mandi" data-scroll-reveal>
+
+      <!-- ITEM -->
+      <div class="menu-item" data-cat="mandi">
+
         <div class="mi-left">
-          <span class="mi-tag">Arabic</span>
-          <h4 class="mi-name">Mutton Mandhi</h4>
-          <p class="mi-desc">Slow-cooked tender mutton served atop aromatic Yemeni rice with raita, salad and special green chutney.</p>
+
+          <span class="mi-tag">
+            Arabic
+          </span>
+
+          <h4 class="mi-name">
+            Mutton Mandhi
+          </h4>
+
+          <p class="mi-desc">
+            Slow-cooked tender mutton atop aromatic Yemeni rice.
+          </p>
+
         </div>
-        <div class="mi-right"><div class="mi-icon">🐑</div></div>
+
+        <div class="mi-right">
+          <div class="mi-icon">🐑</div>
+        </div>
+
       </div>
-      <div class="menu-item" data-cat="mandi" data-scroll-reveal>
+
+      <!-- ITEM -->
+      <div class="menu-item" data-cat="biryani">
+
         <div class="mi-left">
-          <span class="mi-tag">Special</span>
-          <h4 class="mi-name">Al Faham Mandi</h4>
-          <p class="mi-desc">Grilled Al Faham chicken over a bed of fragrant Mandhi rice — smoky, charred and deeply spiced.</p>
-          <span class="mi-badge">⭐ Award Winner</span>
+
+          <span class="mi-tag">
+            Malabar
+          </span>
+
+          <h4 class="mi-name">
+            Chicken Dum Biryani
+          </h4>
+
+          <p class="mi-desc">
+            Dum-sealed biryani with caramelised onions and whole spices.
+          </p>
+
+          <span class="mi-badge">
+            ⭐ Most Ordered
+          </span>
+
         </div>
-        <div class="mi-right"><div class="mi-icon">🍗</div></div>
+
+        <div class="mi-right">
+          <div class="mi-icon">🍚</div>
+        </div>
+
       </div>
-      <div class="menu-item" data-cat="mandi" data-scroll-reveal>
+
+      <!-- ITEM -->
+      <div class="menu-item" data-cat="chicken">
+
         <div class="mi-left">
-          <span class="mi-tag">Arabic</span>
-          <h4 class="mi-name">Kondattam Mandhi</h4>
-          <p class="mi-desc">A rich, intensely flavoured Mandhi variation with a caramelised crust and deep smoky finish.</p>
+
+          <span class="mi-tag">
+            Afghani
+          </span>
+
+          <h4 class="mi-name">
+            Afghani Chicken
+          </h4>
+
+          <p class="mi-desc">
+            Creamy charcoal grilled chicken with mint chutney.
+          </p>
+
         </div>
-        <div class="mi-right"><div class="mi-icon">🥘</div></div>
+
+        <div class="mi-right">
+          <div class="mi-icon">🔥</div>
+        </div>
+
       </div>
-      <div class="menu-item" data-cat="biryani" data-scroll-reveal>
+
+      <!-- ITEM -->
+      <div class="menu-item" data-cat="snacks">
+
         <div class="mi-left">
-          <span class="mi-tag">Malabar</span>
-          <h4 class="mi-name">Chicken Dum Biryani</h4>
-          <p class="mi-desc">Dum-sealed biryani with marinated chicken, whole spices and caramelised onions. Served with pachadi and pickle.</p>
-          <span class="mi-badge">🔥 Most Ordered</span>
+
+          <span class="mi-tag">
+            Street
+          </span>
+
+          <h4 class="mi-name">
+            Shawarma
+          </h4>
+
+          <p class="mi-desc">
+            Slow rotisserie chicken wrapped with garlic sauce.
+          </p>
+
         </div>
-        <div class="mi-right"><div class="mi-icon">🍚</div></div>
+
+        <div class="mi-right">
+          <div class="mi-icon">🌯</div>
+        </div>
+
       </div>
-      <div class="menu-item" data-cat="biryani" data-scroll-reveal>
+
+      <!-- ITEM -->
+      <div class="menu-item" data-cat="drinks">
+
         <div class="mi-left">
-          <span class="mi-tag">Hyderabad</span>
-          <h4 class="mi-name">Hyderabadi Chicken Biryani</h4>
-          <p class="mi-desc">Hyderabadi-style layered biryani with kewra water, fried onions and slow-cooked chicken.</p>
+
+          <span class="mi-tag">
+            Arabic
+          </span>
+
+          <h4 class="mi-name">
+            Qahwa Coffee
+          </h4>
+
+          <p class="mi-desc">
+            Traditional saffron infused Arabic coffee with cardamom.
+          </p>
+
         </div>
-        <div class="mi-right"><div class="mi-icon">🫕</div></div>
-      </div>
-      <div class="menu-item" data-cat="chicken" data-scroll-reveal>
-        <div class="mi-left">
-          <span class="mi-tag">Afghani</span>
-          <h4 class="mi-name">Afghani Chicken</h4>
-          <p class="mi-desc">Creamy, mild Afghani-style marinated chicken grilled over charcoal. Served with mint chutney and roomali.</p>
-          <span class="mi-badge">⭐ Chef's Pick</span>
+
+        <div class="mi-right">
+          <div class="mi-icon">☕</div>
         </div>
-        <div class="mi-right"><div class="mi-icon">🔥</div></div>
+
       </div>
-      <div class="menu-item" data-cat="chicken" data-scroll-reveal>
-        <div class="mi-left">
-          <span class="mi-tag">Grilled</span>
-          <h4 class="mi-name">Honey Chicken Breast</h4>
-          <p class="mi-desc">Tender chicken breast glazed with wildflower honey and chilli — sweet heat, perfectly balanced.</p>
-        </div>
-        <div class="mi-right"><div class="mi-icon">🍯</div></div>
-      </div>
-      <div class="menu-item" data-cat="chicken" data-scroll-reveal>
-        <div class="mi-left">
-          <span class="mi-tag">Fried</span>
-          <h4 class="mi-name">100gm Chicken Fry</h4>
-          <p class="mi-desc">Crispy Malabar-style fried chicken with a fiery masala crust. From ₹108.</p>
-        </div>
-        <div class="mi-right"><div class="mi-icon">🍳</div></div>
-      </div>
-      <div class="menu-item" data-cat="snacks" data-scroll-reveal>
-        <div class="mi-left">
-          <span class="mi-tag">Street</span>
-          <h4 class="mi-name">Kerala Porotta</h4>
-          <p class="mi-desc">Layered, flaky Malabar porotta served with beef roast or chicken curry — a local favourite.</p>
-          <span class="mi-badge">❤️ Fan Favourite</span>
-        </div>
-        <div class="mi-right"><div class="mi-icon">🫓</div></div>
-      </div>
-      <div class="menu-item" data-cat="snacks" data-scroll-reveal>
-        <div class="mi-left">
-          <span class="mi-tag">Arabic</span>
-          <h4 class="mi-name">Shawarma</h4>
-          <p class="mi-desc">Slow-rotisserie chicken wrapped in soft bread with garlic sauce, pickles, and fresh vegetables.</p>
-        </div>
-        <div class="mi-right"><div class="mi-icon">🌯</div></div>
-      </div>
-      <div class="menu-item" data-cat="snacks" data-scroll-reveal>
-        <div class="mi-left">
-          <span class="mi-tag">Malabar</span>
-          <h4 class="mi-name">Beef Roast</h4>
-          <p class="mi-desc">Slow-cooked beef with Malabar masala, coconut slices and curry leaves. Served with porotta.</p>
-          <span class="mi-badge">🌶️ Spicy</span>
-        </div>
-        <div class="mi-right"><div class="mi-icon">🥩</div></div>
-      </div>
-      <div class="menu-item" data-cat="drinks" data-scroll-reveal>
-        <div class="mi-left">
-          <span class="mi-tag">Fresh</span>
-          <h4 class="mi-name">Ginger Lime Cooler</h4>
-          <p class="mi-desc">Fresh Kerala lime with crushed ginger, rock salt and soda. The ultimate heat companion.</p>
-        </div>
-        <div class="mi-right"><div class="mi-icon">🍋</div></div>
-      </div>
-      <div class="menu-item" data-cat="drinks" data-scroll-reveal>
-        <div class="mi-left">
-          <span class="mi-tag">Arabic</span>
-          <h4 class="mi-name">Qahwa — Arabic Coffee</h4>
-          <p class="mi-desc">Traditional saffron-infused Arabic coffee with cardamom. A ritual, not just a drink.</p>
-          <span class="mi-badge">✨ Traditional</span>
-        </div>
-        <div class="mi-right"><div class="mi-icon">☕</div></div>
-      </div>
+
     </div>
 
-  </section>
+  </div>
 
+</section>
   <!-- ═══════════════════════════════
        POINTED ARCH DIVIDER — into Experience
   ═══════════════════════════════ -->

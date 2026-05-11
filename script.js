@@ -630,3 +630,73 @@ function updateNavbarContrast() {
 window.addEventListener("scroll", updateNavbarContrast);
 
 updateNavbarContrast();
+
+
+const spotlightCards = document.querySelectorAll(".spot-card[data-cat]");
+
+spotlightCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const cat = card.dataset.cat;
+    const tab = Array.from(document.querySelectorAll(".tab"))
+      .find(t => t.dataset.cat === cat);
+
+    if (tab) tab.click();
+
+    const menuSection = document.getElementById("menu");
+    if (menuSection) {
+      menuSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+});
+
+
+document
+  .querySelector(".menu-explore-trigger")
+  ?.addEventListener("click", () => {
+
+    const target = document.querySelector(".menu-tabs");
+
+    if(target){
+
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+    }
+
+});
+
+
+/* ═══════════════════════════════
+   MENU REVEAL
+═══════════════════════════════ */
+
+const menuRevealBtn =
+  document.querySelector(".menu-bottom-btn");
+
+const fullMenu =
+  document.getElementById("fullMenu");
+
+if(menuRevealBtn && fullMenu){
+
+  menuRevealBtn.addEventListener("click", () => {
+
+    fullMenu.classList.add("show");
+
+    menuRevealBtn.classList.add("active");
+
+    // smooth cinematic scroll
+
+    setTimeout(() => {
+
+      fullMenu.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+    }, 250);
+
+  });
+
+}
