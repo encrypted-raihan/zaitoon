@@ -4885,37 +4885,38 @@ color: transparent !important;
 
 }
 
+@media (max-width:768px){
+  /* spotlight cards marquee */
 
-/* spotlight cards marquee */
+  .menu-spotlight{
 
-.menu-spotlight{
+    overflow: hidden;
 
-  overflow: hidden;
+    display: flex;
 
-  display: flex;
+    gap: 1rem;
 
-  gap: 1rem;
+    width: max-content;
 
-  width: max-content;
-
-  animation:
-    spotlightReverse 20s linear infinite;
-}
-
-/* reverse direction */
-
-@keyframes spotlightReverse{
-
-  from{
-
-    transform:
-      translateX(-40%);
+    animation:
+      spotlightReverse 20s linear infinite;
   }
 
-  to{
+  /* reverse direction */
 
-    transform:
-      translateX(0);
+  @keyframes spotlightReverse{
+
+    from{
+
+      transform:
+        translateX(-40%);
+    }
+
+    to{
+
+      transform:
+        translateX(0);
+    }
+
   }
-
 }
