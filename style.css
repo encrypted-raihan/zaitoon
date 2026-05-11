@@ -4884,3 +4884,38 @@ color: transparent !important;
   }
 
 }
+
+
+/* spotlight cards marquee */
+
+.menu-spotlight{
+
+  overflow: hidden;
+
+  display: flex;
+
+  gap: 1rem;
+
+  width: max-content;
+
+  animation:
+    spotlightReverse 20s linear infinite;
+}
+
+/* reverse direction */
+
+@keyframes spotlightReverse{
+
+  from{
+
+    transform:
+      translateX(-40%);
+  }
+
+  to{
+
+    transform:
+      translateX(0);
+  }
+
+}
