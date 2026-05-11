@@ -2798,12 +2798,6 @@ nav.light-section .nav-reserve{
     reviewsScroll 38s linear infinite;
 }
 
-/* PAUSE ON HOVER */
-
-.reviews-marquee:hover .reviews-track{
-
-  animation-play-state: paused;
-}
 
 .review-card{
 
@@ -3299,27 +3293,57 @@ nav.light-section .nav-reserve{
   gap: 1.2rem;
 }
 
-/* CARD */
+/* ═══════════════════════════════
+   FULLSCREEN CINEMATIC CARDS
+═══════════════════════════════ */
 
 .dish-preview-card{
 
   position: relative;
 
+  flex: 0 0 88vw;
+
+  width: 88vw;
+
+  min-height: 78vh;
+
+  border-radius: 42px;
+
   overflow: hidden;
+}
 
-  border-radius: 28px;
+/* DESKTOP */
 
-  min-height: 420px;
+@media (min-width: 769px){
 
-  background: #120804;
+  .dish-preview-card{
 
-  border:
-    1px solid rgba(255,255,255,.05);
+    flex: 0 0 78vw;
 
-  box-shadow:
-    0 20px 60px rgba(0,0,0,.18);
+    width: 78vw;
 
-  isolation: isolate;
+    min-height: 82vh;
+
+    border-radius: 48px;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 768px){
+
+  .dish-preview-card{
+
+    flex: 0 0 92vw;
+
+    width: 92vw;
+
+    min-height: 68vh;
+
+    border-radius: 30px;
+  }
+
 }
 
 /* IMAGE */
@@ -4328,7 +4352,7 @@ nav.light-section .nav-reserve{
 
   justify-content: space-between;
 
-  gap: 1.5rem;
+  gap: 2.5rem;
 
   min-width: 320px;
 
@@ -4462,6 +4486,285 @@ nav.light-section .nav-reserve{
     height: 58px;
 
     font-size: 1.5rem;
+  }
+
+}
+
+/* ═══════════════════════════════
+   MENU PREVIEW INFINITE MARQUEE
+   CLEAN PREMIUM VERSION
+═══════════════════════════════ */
+
+.menu-preview-marquee{
+
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+
+  margin-top: 2rem;
+
+  /* REMOVE ALL EDGE FOG */
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+/* REMOVE OLD GLOW/FADES */
+
+.menu-preview-marquee::before,
+.menu-preview-marquee::after{
+
+  display: none !important;
+}
+
+/* TRACK */
+
+.menu-preview-track{
+
+  display: flex;
+
+  align-items: stretch;
+
+  gap: 1.5rem;
+
+  width: max-content;
+
+  will-change: transform;
+
+  animation:
+    menuPreviewScroll 36s linear infinite;
+}
+
+
+/* CARD */
+
+.dish-preview-card{
+
+  position: relative;
+
+  flex: 0 0 320px;
+
+  min-height: 520px;
+
+  border-radius: 34px;
+
+  overflow: hidden;
+
+  background: #120401;
+
+  border:
+    1px solid rgba(255,255,255,.05);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.22);
+
+  isolation: isolate;
+}
+
+/* IMAGE */
+
+.dish-preview-image{
+
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.dish-preview-image img{
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transform: scale(1.02);
+
+  filter:
+    brightness(.55)
+    contrast(1.08)
+    saturate(1.08);
+
+  transition:
+    transform .8s cubic-bezier(.16,1,.3,1);
+}
+
+/* OVERLAY */
+
+.dish-preview-card::before{
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.82) 8%,
+      rgba(0,0,0,.35) 42%,
+      rgba(0,0,0,.10) 72%,
+      transparent
+    );
+
+  z-index: 1;
+}
+
+/* HOVER */
+
+.dish-preview-card:hover img{
+
+  transform:
+    scale(1.08);
+}
+
+/* CONTENT */
+
+.dish-preview-content{
+
+  position: absolute;
+
+  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+
+  z-index: 3;
+}
+
+/* TAG */
+
+.dish-preview-tag{
+
+  display: inline-flex;
+
+  align-items: center;
+
+  padding:
+    .55rem 1rem;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,.06);
+
+  backdrop-filter:
+    blur(12px);
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  color: var(--amber);
+
+  font-size: .72rem;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 1rem;
+}
+
+/* TITLE */
+
+.dish-preview-content h3{
+
+  font-family: var(--font-sans);
+
+  font-size: clamp(2rem,4vw,3rem);
+
+  font-weight: 800;
+
+  line-height: .95;
+
+  color: white;
+
+  margin-bottom: 1rem;
+}
+
+/* TEXT */
+
+.dish-preview-content p{
+
+  color:
+    rgba(255,255,255,.72);
+
+  line-height: 1.7;
+
+  font-size: 1rem;
+
+  max-width: 90%;
+}
+
+/* DESKTOP */
+
+@media (min-width: 769px){
+
+  .dish-preview-card{
+
+    flex: 0 0 520px;
+
+    min-height: 560px;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 768px){
+
+  .menu-preview-track{
+
+    gap: 1rem;
+
+    animation-duration: 18s;
+  }
+
+  .dish-preview-card{
+
+    flex: 0 0 300px;
+
+    min-height: 420px;
+
+    border-radius: 28px;
+  }
+
+  .dish-preview-content{
+
+    left: 1.4rem;
+    right: 1.4rem;
+    bottom: 1.4rem;
+  }
+
+  .dish-preview-content h3{
+
+    font-size: 2rem;
+  }
+
+  .dish-preview-content p{
+
+    font-size: .92rem;
+  }
+
+}
+
+/* ANIMATION */
+
+@keyframes menuPreviewScroll{
+
+  from{
+
+    transform:
+      translateX(0);
+  }
+
+  to{
+
+    transform:
+      translateX(calc(-50% - .75rem));
   }
 
 }
