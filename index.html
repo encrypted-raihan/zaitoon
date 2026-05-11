@@ -65,11 +65,9 @@
        HERO
   ═══════════════════════════════ -->
   <section class="hero" id="home">
-
     <video class="hero-video" autoplay muted loop playsinline>
       <source src="https://videos.bravebrand.com/Creative%20Studio/hf_20260418_004933_1563f5ed-46fe-44f6-af7d-502e0ee3f87a.mp4" type="video/mp4" />
     </video>
-
     <div class="hero-grain"></div>
     <div class="hero-overlay"></div>
 
@@ -87,6 +85,15 @@
         Slow-cooked Yemani Mandhi · Afghani Chicken · Aromatic Dum Biryani
       </p>
 
+      <!-- Islamic star divider -->
+      <div class="hero-star-divider" aria-hidden="true">
+        <span class="divider-line"></span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <polygon points="12,2 14.5,9 22,9 16,14 18.5,21 12,17 5.5,21 8,14 2,9 9.5,9" fill="#F4A61B" opacity="0.8"/>
+        </svg>
+        <span class="divider-line"></span>
+      </div>
+
     </div>
 
     <!-- SCROLL CUE -->
@@ -96,6 +103,15 @@
     </div>
 
   </section>
+
+  <!-- ═══════════════════════════════
+       ARCH TRANSITION (Hero → Marquee)
+  ═══════════════════════════════ -->
+  <div class="arch-transition arch-transition--top" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,80 L0,40 Q360,80 720,55 Q1080,30 1440,40 L1440,80Z" fill="#E85D1E"/>
+    </svg>
+  </div>
 
   <!-- ═══════════════════════════════
        MARQUEE
@@ -119,36 +135,50 @@
     </div>
   </div>
 
-
-
-
-
   <!-- ═══════════════════════════════
        STORY
   ═══════════════════════════════ -->
   <section class="story-section" id="story">
 
+    <!-- Geometric border top -->
+    <div class="section-geo-top" aria-hidden="true">
+      <svg viewBox="0 0 1440 32" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,32 L0,16 Q180,0 360,16 Q540,32 720,16 Q900,0 1080,16 Q1260,32 1440,16 L1440,32Z" fill="var(--cream)"/>
+      </svg>
+    </div>
+
     <div class="story-left">
-    <div class="story-img-wrap">
-
-    <div class="story-cinematic-overlay"></div>
-
-    <div class="story-grain"></div>
-
-    <div class="story-img-inner">
-
-        <canvas id="shawarmaCanvas"></canvas>
-
-    </div>
-
-    </div>
+      <div class="story-img-wrap">
+        <div class="story-cinematic-overlay"></div>
+        <div class="story-grain"></div>
+        <div class="story-img-inner">
+          <canvas id="shawarmaCanvas"></canvas>
+        </div>
+      </div>
     </div>
 
     <div class="story-right">
+      <!-- Corner Islamic ornaments -->
+      <div class="corner-ornament corner-ornament--tl" aria-hidden="true">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+          <path d="M0,60 L0,0 L60,0" stroke="#E85D1E" stroke-width="1.5" fill="none" opacity="0.3"/>
+          <path d="M0,40 L0,0 L40,0" stroke="#F4A61B" stroke-width="0.8" fill="none" opacity="0.25"/>
+          <polygon points="8,8 11,16 20,16 13,21 16,30 8,25 0,30 3,21 -4,16 5,16" fill="#F4A61B" opacity="0.35" transform="translate(8,8)"/>
+        </svg>
+      </div>
       <p class="section-eyebrow" data-scroll-reveal>Our Story</p>
       <h2 class="section-title" data-scroll-reveal>
         A Taste of<br><em>Arabia</em><br>In Kerala
       </h2>
+      <div class="ornamental-divider" aria-hidden="true">
+        <svg width="180" height="20" viewBox="0 0 180 20" fill="none">
+          <line x1="0" y1="10" x2="65" y2="10" stroke="#E85D1E" stroke-width="0.8" opacity="0.5"/>
+          <polygon points="90,2 94,10 90,18 86,10" fill="#F4A61B" opacity="0.7"/>
+          <circle cx="75" cy="10" r="2" fill="#E85D1E" opacity="0.5"/>
+          <circle cx="105" cy="10" r="2" fill="#E85D1E" opacity="0.5"/>
+          <line x1="115" y1="10" x2="180" y2="10" stroke="#E85D1E" stroke-width="0.8" opacity="0.5"/>
+        </svg>
+      </div>
       <div class="story-text" data-scroll-reveal>
         <p>
           Nestled opposite the Reliance Petrol Pump in Chandanathope, Zaitoon was born from a single obsession — to bring the slow-fire soul of Yemeni cooking to the heart of Kollam.
@@ -169,12 +199,52 @@
   </section>
 
   <!-- ═══════════════════════════════
+       ARCH DIVIDER — MUQARNAS
+  ═══════════════════════════════ -->
+  <div class="muqarnas-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <!-- Muqarnas-style stepped arch band -->
+      <path d="
+        M0,90 L0,60
+        Q30,30 60,60 Q90,90 120,60 Q150,30 180,60
+        Q210,90 240,60 Q270,30 300,60 Q330,90 360,60
+        Q390,30 420,60 Q450,90 480,60 Q510,30 540,60
+        Q570,90 600,60 Q630,30 660,60 Q690,90 720,60
+        Q750,30 780,60 Q810,90 840,60 Q870,30 900,60
+        Q930,90 960,60 Q990,30 1020,60 Q1050,90 1080,60
+        Q1110,30 1140,60 Q1170,90 1200,60 Q1230,30 1260,60
+        Q1290,90 1320,60 Q1350,30 1380,60 Q1410,90 1440,60
+        L1440,90Z
+      " fill="#1C0A00"/>
+      <!-- Gold accent line -->
+      <path d="
+        M0,60
+        Q30,30 60,60 Q90,90 120,60 Q150,30 180,60
+        Q210,90 240,60 Q270,30 300,60 Q330,90 360,60
+        Q390,30 420,60 Q450,90 480,60 Q510,30 540,60
+        Q570,90 600,60 Q630,30 660,60 Q690,90 720,60
+        Q750,30 780,60 Q810,90 840,60 Q870,30 900,60
+        Q930,90 960,60 Q990,30 1020,60 Q1050,90 1080,60
+        Q1110,30 1140,60 Q1170,90 1200,60 Q1230,30 1260,60
+        Q1290,90 1320,60 Q1350,30 1380,60 Q1410,90 1440,60
+      " stroke="#F4A61B" stroke-width="1" fill="none" opacity="0.4"/>
+    </svg>
+  </div>
+
+  <!-- ═══════════════════════════════
        SPECIALITY STRIP
   ═══════════════════════════════ -->
   <section class="specialty-section">
+    <!-- Islamic tile pattern background -->
+    <div class="specialty-pattern" aria-hidden="true"></div>
     <div class="specialty-grid">
-
       <div class="specialty-card" data-scroll-reveal>
+        <div class="sc-arch-top" aria-hidden="true">
+          <svg viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,30 L0,15 Q50,0 100,15 L100,30Z" fill="rgba(255,255,255,0.04)"/>
+            <path d="M0,15 Q50,0 100,15" stroke="#F4A61B" stroke-width="0.8" fill="none" opacity="0.35"/>
+          </svg>
+        </div>
         <div class="sc-num">01</div>
         <div class="sc-icon">🔥</div>
         <h3 class="sc-title">Slow Fire Cooking</h3>
@@ -182,6 +252,12 @@
       </div>
 
       <div class="specialty-card" data-scroll-reveal data-delay="100">
+        <div class="sc-arch-top" aria-hidden="true">
+          <svg viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,30 L0,15 Q50,0 100,15 L100,30Z" fill="rgba(255,255,255,0.04)"/>
+            <path d="M0,15 Q50,0 100,15" stroke="#F4A61B" stroke-width="0.8" fill="none" opacity="0.35"/>
+          </svg>
+        </div>
         <div class="sc-num">02</div>
         <div class="sc-icon">🌿</div>
         <h3 class="sc-title">Yemeni Heritage</h3>
@@ -189,6 +265,12 @@
       </div>
 
       <div class="specialty-card" data-scroll-reveal data-delay="200">
+        <div class="sc-arch-top" aria-hidden="true">
+          <svg viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,30 L0,15 Q50,0 100,15 L100,30Z" fill="rgba(255,255,255,0.04)"/>
+            <path d="M0,15 Q50,0 100,15" stroke="#F4A61B" stroke-width="0.8" fill="none" opacity="0.35"/>
+          </svg>
+        </div>
         <div class="sc-num">03</div>
         <div class="sc-icon">🍚</div>
         <h3 class="sc-title">Dum Biryani</h3>
@@ -196,19 +278,41 @@
       </div>
 
       <div class="specialty-card" data-scroll-reveal data-delay="300">
+        <div class="sc-arch-top" aria-hidden="true">
+          <svg viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,30 L0,15 Q50,0 100,15 L100,30Z" fill="rgba(255,255,255,0.04)"/>
+            <path d="M0,15 Q50,0 100,15" stroke="#F4A61B" stroke-width="0.8" fill="none" opacity="0.35"/>
+          </svg>
+        </div>
         <div class="sc-num">04</div>
         <div class="sc-icon">🫙</div>
         <h3 class="sc-title">House Marinades</h3>
         <p class="sc-text">Every protein marinated overnight in our proprietary spice blends — never rushed.</p>
       </div>
-
     </div>
   </section>
+
+  <!-- Arch bottom transition -->
+  <div class="arch-wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,0 L0,30 Q240,60 480,30 Q720,0 960,30 Q1200,60 1440,30 L1440,0Z" fill="#1C0A00"/>
+    </svg>
+  </div>
 
   <!-- ═══════════════════════════════
        MENU
   ═══════════════════════════════ -->
   <section class="menu-section" id="menu">
+    <!-- Top arch header ornament -->
+    <div class="menu-arch-header" aria-hidden="true">
+      <svg viewBox="0 0 300 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30,60 L30,30 Q150,0 270,30 L270,60" stroke="#E85D1E" stroke-width="1" fill="none" opacity="0.35"/>
+        <path d="M55,60 L55,36 Q150,12 245,36 L245,60" stroke="#F4A61B" stroke-width="0.6" fill="none" opacity="0.2"/>
+        <g transform="translate(150,12)">
+          <polygon points="0,-10 2.5,-3 10,-3 4,1 6.5,8 0,4 -6.5,8 -4,1 -10,-3 -2.5,-3" fill="#F4A61B" opacity="0.6"/>
+        </g>
+      </svg>
+    </div>
 
     <div class="menu-header">
       <p class="section-eyebrow" data-scroll-reveal>What We Serve</p>
@@ -226,7 +330,6 @@
     </div>
 
     <div class="menu-list" id="menuList">
-
       <div class="menu-item" data-cat="mandi" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Signature</span>
@@ -238,18 +341,14 @@
           <div class="mi-icon">🍖</div>
         </div>
       </div>
-
       <div class="menu-item" data-cat="mandi" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Arabic</span>
           <h4 class="mi-name">Mutton Mandhi</h4>
           <p class="mi-desc">Slow-cooked tender mutton served atop aromatic Yemeni rice with raita, salad and special green chutney.</p>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">🐑</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">🐑</div></div>
       </div>
-
       <div class="menu-item" data-cat="mandi" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Special</span>
@@ -257,22 +356,16 @@
           <p class="mi-desc">Grilled Al Faham chicken over a bed of fragrant Mandhi rice — smoky, charred and deeply spiced.</p>
           <span class="mi-badge">⭐ Award Winner</span>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">🍗</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">🍗</div></div>
       </div>
-
       <div class="menu-item" data-cat="mandi" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Arabic</span>
           <h4 class="mi-name">Kondattam Mandhi</h4>
           <p class="mi-desc">A rich, intensely flavoured Mandhi variation with a caramelised crust and deep smoky finish.</p>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">🥘</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">🥘</div></div>
       </div>
-
       <div class="menu-item" data-cat="biryani" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Malabar</span>
@@ -280,22 +373,16 @@
           <p class="mi-desc">Dum-sealed biryani with marinated chicken, whole spices and caramelised onions. Served with pachadi and pickle.</p>
           <span class="mi-badge">🔥 Most Ordered</span>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">🍚</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">🍚</div></div>
       </div>
-
       <div class="menu-item" data-cat="biryani" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Hyderabad</span>
           <h4 class="mi-name">Hyderabadi Chicken Biryani</h4>
           <p class="mi-desc">Hyderabadi-style layered biryani with kewra water, fried onions and slow-cooked chicken.</p>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">🫕</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">🫕</div></div>
       </div>
-
       <div class="menu-item" data-cat="chicken" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Afghani</span>
@@ -303,33 +390,24 @@
           <p class="mi-desc">Creamy, mild Afghani-style marinated chicken grilled over charcoal. Served with mint chutney and roomali.</p>
           <span class="mi-badge">⭐ Chef's Pick</span>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">🔥</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">🔥</div></div>
       </div>
-
       <div class="menu-item" data-cat="chicken" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Grilled</span>
           <h4 class="mi-name">Honey Chicken Breast</h4>
           <p class="mi-desc">Tender chicken breast glazed with wildflower honey and chilli — sweet heat, perfectly balanced.</p>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">🍯</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">🍯</div></div>
       </div>
-
       <div class="menu-item" data-cat="chicken" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Fried</span>
           <h4 class="mi-name">100gm Chicken Fry</h4>
           <p class="mi-desc">Crispy Malabar-style fried chicken with a fiery masala crust. From ₹108.</p>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">🍳</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">🍳</div></div>
       </div>
-
       <div class="menu-item" data-cat="snacks" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Street</span>
@@ -337,22 +415,16 @@
           <p class="mi-desc">Layered, flaky Malabar porotta served with beef roast or chicken curry — a local favourite.</p>
           <span class="mi-badge">❤️ Fan Favourite</span>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">🫓</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">🫓</div></div>
       </div>
-
       <div class="menu-item" data-cat="snacks" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Arabic</span>
           <h4 class="mi-name">Shawarma</h4>
           <p class="mi-desc">Slow-rotisserie chicken wrapped in soft bread with garlic sauce, pickles, and fresh vegetables.</p>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">🌯</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">🌯</div></div>
       </div>
-
       <div class="menu-item" data-cat="snacks" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Malabar</span>
@@ -360,22 +432,16 @@
           <p class="mi-desc">Slow-cooked beef with Malabar masala, coconut slices and curry leaves. Served with porotta.</p>
           <span class="mi-badge">🌶️ Spicy</span>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">🥩</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">🥩</div></div>
       </div>
-
       <div class="menu-item" data-cat="drinks" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Fresh</span>
           <h4 class="mi-name">Ginger Lime Cooler</h4>
           <p class="mi-desc">Fresh Kerala lime with crushed ginger, rock salt and soda. The ultimate heat companion.</p>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">🍋</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">🍋</div></div>
       </div>
-
       <div class="menu-item" data-cat="drinks" data-scroll-reveal>
         <div class="mi-left">
           <span class="mi-tag">Arabic</span>
@@ -383,28 +449,75 @@
           <p class="mi-desc">Traditional saffron-infused Arabic coffee with cardamom. A ritual, not just a drink.</p>
           <span class="mi-badge">✨ Traditional</span>
         </div>
-        <div class="mi-right">
-          <div class="mi-icon">☕</div>
-        </div>
+        <div class="mi-right"><div class="mi-icon">☕</div></div>
       </div>
-
     </div>
 
   </section>
 
   <!-- ═══════════════════════════════
+       POINTED ARCH DIVIDER — into Experience
+  ═══════════════════════════════ -->
+  <div class="pointed-arch-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <!-- Multi-arch arcade band -->
+      <path d="
+        M-10,100 L-10,55
+        Q30,10 70,55 Q110,100 150,55
+        Q190,10 230,55 Q270,100 310,55
+        Q350,10 390,55 Q430,100 470,55
+        Q510,10 550,55 Q590,100 630,55
+        Q670,10 710,55 Q750,100 790,55
+        Q830,10 870,55 Q910,100 950,55
+        Q990,10 1030,55 Q1070,100 1110,55
+        Q1150,10 1190,55 Q1230,100 1270,55
+        Q1310,10 1350,55 Q1390,100 1450,55
+        L1450,100Z
+      " fill="#1C0A00"/>
+      <path d="
+        M-10,55
+        Q30,10 70,55 Q110,100 150,55
+        Q190,10 230,55 Q270,100 310,55
+        Q350,10 390,55 Q430,100 470,55
+        Q510,10 550,55 Q590,100 630,55
+        Q670,10 710,55 Q750,100 790,55
+        Q830,10 870,55 Q910,100 950,55
+        Q990,10 1030,55 Q1070,100 1110,55
+        Q1150,10 1190,55 Q1230,100 1270,55
+        Q1310,10 1350,55 Q1390,100 1450,55
+      " stroke="#F4A61B" stroke-width="0.8" fill="none" opacity="0.3"/>
+    </svg>
+  </div>
+
+  <!-- ═══════════════════════════════
        EXPERIENCE
   ═══════════════════════════════ -->
   <section class="experience-section" id="experience">
+    <!-- Geometric pattern in bg -->
+    <div class="exp-geo-pattern" aria-hidden="true"></div>
 
     <div class="exp-header">
       <p class="section-eyebrow light" data-scroll-reveal>The Zaitoon Way</p>
       <h2 class="section-title light" data-scroll-reveal>The Experience</h2>
+      <div class="exp-header-ornament" aria-hidden="true">
+        <svg width="200" height="16" viewBox="0 0 200 16" fill="none">
+          <line x1="0" y1="8" x2="75" y2="8" stroke="#F4A61B" stroke-width="0.7" opacity="0.45"/>
+          <polygon points="100,1 104,8 100,15 96,8" fill="#F4A61B" opacity="0.65"/>
+          <circle cx="87" cy="8" r="1.8" fill="#E85D1E" opacity="0.5"/>
+          <circle cx="113" cy="8" r="1.8" fill="#E85D1E" opacity="0.5"/>
+          <line x1="125" y1="8" x2="200" y2="8" stroke="#F4A61B" stroke-width="0.7" opacity="0.45"/>
+        </svg>
+      </div>
     </div>
 
     <div class="exp-grid">
-
       <div class="exp-card" data-scroll-reveal>
+        <div class="exp-arch" aria-hidden="true">
+          <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <path d="M20,120 L20,60 Q100,10 180,60 L180,120" fill="rgba(244,166,27,0.05)" stroke="#F4A61B" stroke-width="0.8" opacity="0.3"/>
+            <g transform="translate(100,28)"><polygon points="0,-10 2.5,-3 10,-3 4,1 6.5,8 0,4 -6.5,8 -4,1 -10,-3 -2.5,-3" fill="#F4A61B" opacity="0.4"/></g>
+          </svg>
+        </div>
         <div class="exp-number">01</div>
         <div class="exp-icon">🛋️</div>
         <h3 class="exp-title">Private Dining Rooms</h3>
@@ -412,6 +525,12 @@
       </div>
 
       <div class="exp-card" data-scroll-reveal data-delay="120">
+        <div class="exp-arch" aria-hidden="true">
+          <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <path d="M20,120 L20,60 Q100,10 180,60 L180,120" fill="rgba(244,166,27,0.05)" stroke="#F4A61B" stroke-width="0.8" opacity="0.3"/>
+            <g transform="translate(100,28)"><polygon points="0,-10 2.5,-3 10,-3 4,1 6.5,8 0,4 -6.5,8 -4,1 -10,-3 -2.5,-3" fill="#F4A61B" opacity="0.4"/></g>
+          </svg>
+        </div>
         <div class="exp-number">02</div>
         <div class="exp-icon">🌙</div>
         <h3 class="exp-title">Cinematic Ambience</h3>
@@ -419,6 +538,12 @@
       </div>
 
       <div class="exp-card" data-scroll-reveal data-delay="240">
+        <div class="exp-arch" aria-hidden="true">
+          <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <path d="M20,120 L20,60 Q100,10 180,60 L180,120" fill="rgba(244,166,27,0.05)" stroke="#F4A61B" stroke-width="0.8" opacity="0.3"/>
+            <g transform="translate(100,28)"><polygon points="0,-10 2.5,-3 10,-3 4,1 6.5,8 0,4 -6.5,8 -4,1 -10,-3 -2.5,-3" fill="#F4A61B" opacity="0.4"/></g>
+          </svg>
+        </div>
         <div class="exp-number">03</div>
         <div class="exp-icon">🤝</div>
         <h3 class="exp-title">Attentive Service</h3>
@@ -426,12 +551,17 @@
       </div>
 
       <div class="exp-card" data-scroll-reveal data-delay="360">
+        <div class="exp-arch" aria-hidden="true">
+          <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <path d="M20,120 L20,60 Q100,10 180,60 L180,120" fill="rgba(244,166,27,0.05)" stroke="#F4A61B" stroke-width="0.8" opacity="0.3"/>
+            <g transform="translate(100,28)"><polygon points="0,-10 2.5,-3 10,-3 4,1 6.5,8 0,4 -6.5,8 -4,1 -10,-3 -2.5,-3" fill="#F4A61B" opacity="0.4"/></g>
+          </svg>
+        </div>
         <div class="exp-number">04</div>
         <div class="exp-icon">🚗</div>
         <h3 class="exp-title">Ample Parking</h3>
         <p class="exp-text">Dedicated parking space opposite the Reliance Petrol Pump. AC and Non-AC seating available.</p>
       </div>
-
     </div>
 
     <!-- OPENING HOURS BLOCK -->
@@ -461,6 +591,14 @@
   <!-- ═══════════════════════════════
        GALLERY
   ═══════════════════════════════ -->
+  <!-- Arch divider into gallery -->
+  <div class="arch-into-gallery" aria-hidden="true">
+    <svg viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,0 L0,40 Q360,70 720,50 Q1080,30 1440,40 L1440,0Z" fill="#1C0A00"/>
+      <path d="M0,40 Q360,70 720,50 Q1080,30 1440,40" stroke="#F4A61B" stroke-width="0.8" fill="none" opacity="0.25"/>
+    </svg>
+  </div>
+
   <section class="gallery-section" id="gallery">
     <div class="gallery-header">
       <p class="section-eyebrow" data-scroll-reveal>The Spread</p>
@@ -468,22 +606,27 @@
     </div>
     <div class="gallery-grid">
       <div class="gallery-item gi-tall" data-scroll-reveal>
+        <div class="gallery-arch-mask"></div>
         <img src="https://images.unsplash.com/photo-1618889482923-38250401a84e?w=700&q=80" alt="Mandi" loading="lazy"/>
         <div class="gi-label">Mandhi Feast</div>
       </div>
       <div class="gallery-item" data-scroll-reveal data-delay="100">
+        <div class="gallery-arch-mask"></div>
         <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=700&q=80" alt="Biryani" loading="lazy"/>
         <div class="gi-label">Dum Biryani</div>
       </div>
       <div class="gallery-item" data-scroll-reveal data-delay="200">
+        <div class="gallery-arch-mask"></div>
         <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=700&q=80" alt="Grilled Chicken" loading="lazy"/>
         <div class="gi-label">Afghani Grill</div>
       </div>
       <div class="gallery-item gi-wide" data-scroll-reveal data-delay="300">
+        <div class="gallery-arch-mask"></div>
         <img src="https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=1200&q=80" alt="Arabic spread" loading="lazy"/>
         <div class="gi-label">Arabic Spread</div>
       </div>
       <div class="gallery-item" data-scroll-reveal data-delay="400">
+        <div class="gallery-arch-mask"></div>
         <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=700&q=80" alt="Shawarma" loading="lazy"/>
         <div class="gi-label">House Shawarma</div>
       </div>
@@ -491,13 +634,62 @@
   </section>
 
   <!-- ═══════════════════════════════
-       REVIEWS
+       REVIEWS — FULL CAROUSEL
   ═══════════════════════════════ -->
+  <div class="reviews-arch-transition" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,80 L0,0 Q720,80 1440,0 L1440,80Z" fill="#1C1205"/>
+    </svg>
+  </div>
+
   <section class="reviews-section" id="reviews">
+    <!-- Hanging lanterns in reviews -->
+    <div class="reviews-lanterns" aria-hidden="true">
+      <svg class="rev-lantern rev-lantern-l" viewBox="0 0 50 130" fill="none">
+        <line x1="25" y1="0" x2="25" y2="16" stroke="#F4A61B" stroke-width="1" opacity="0.6"/>
+        <rect x="17" y="12" width="16" height="6" rx="2" fill="#c94d17" opacity="0.8"/>
+        <path d="M9,26 Q5,44 5,62 Q5,80 25,85 Q45,80 45,62 Q45,44 41,26 Q35,17 25,17 Q15,17 9,26Z" fill="#c94d17" opacity="0.75"/>
+        <path d="M12,40 L38,40" stroke="#F4A61B" stroke-width="0.5" opacity="0.45"/>
+        <path d="M11,55 L39,55" stroke="#F4A61B" stroke-width="0.5" opacity="0.45"/>
+        <path d="M12,70 L38,70" stroke="#F4A61B" stroke-width="0.5" opacity="0.45"/>
+        <path d="M18,85 L16,98 Q25,104 34,98 L32,85Z" fill="#a83d10" opacity="0.85"/>
+        <circle cx="25" cy="103" r="3" fill="#F4A61B" opacity="0.85"/>
+        <ellipse cx="25" cy="57" rx="10" ry="16" fill="#F4A61B" opacity="0.1"/>
+      </svg>
+      <svg class="rev-lantern rev-lantern-r" viewBox="0 0 50 130" fill="none">
+        <line x1="25" y1="0" x2="25" y2="16" stroke="#F4A61B" stroke-width="1" opacity="0.6"/>
+        <rect x="17" y="12" width="16" height="6" rx="2" fill="#c94d17" opacity="0.8"/>
+        <path d="M9,26 Q5,44 5,62 Q5,80 25,85 Q45,80 45,62 Q45,44 41,26 Q35,17 25,17 Q15,17 9,26Z" fill="#c94d17" opacity="0.75"/>
+        <path d="M12,40 L38,40" stroke="#F4A61B" stroke-width="0.5" opacity="0.45"/>
+        <path d="M11,55 L39,55" stroke="#F4A61B" stroke-width="0.5" opacity="0.45"/>
+        <path d="M12,70 L38,70" stroke="#F4A61B" stroke-width="0.5" opacity="0.45"/>
+        <path d="M18,85 L16,98 Q25,104 34,98 L32,85Z" fill="#a83d10" opacity="0.85"/>
+        <circle cx="25" cy="103" r="3" fill="#F4A61B" opacity="0.85"/>
+        <ellipse cx="25" cy="57" rx="10" ry="16" fill="#F4A61B" opacity="0.1"/>
+      </svg>
+    </div>
+
+    <!-- Ornate arch frame for reviews header -->
+    <div class="reviews-arch-frame" aria-hidden="true">
+      <svg viewBox="0 0 500 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50,100 L50,50 Q250,0 450,50 L450,100" stroke="#F4A61B" stroke-width="1" fill="none" opacity="0.2"/>
+        <path d="M80,100 L80,58 Q250,16 420,58 L420,100" stroke="#E85D1E" stroke-width="0.6" fill="none" opacity="0.15"/>
+        <g transform="translate(250,18)">
+          <polygon points="0,-14 3.5,-4 14,-4 6,2 9,12 0,6 -9,12 -6,2 -14,-4 -3.5,-4" fill="#F4A61B" opacity="0.5"/>
+        </g>
+        <!-- Side stars -->
+        <g transform="translate(90,52)" opacity="0.35">
+          <polygon points="0,-7 1.8,-2 7,-2 3,1 4.5,6 0,3.5 -4.5,6 -3,1 -7,-2 -1.8,-2" fill="#F4A61B"/>
+        </g>
+        <g transform="translate(410,52)" opacity="0.35">
+          <polygon points="0,-7 1.8,-2 7,-2 3,1 4.5,6 0,3.5 -4.5,6 -3,1 -7,-2 -1.8,-2" fill="#F4A61B"/>
+        </g>
+      </svg>
+    </div>
 
     <div class="reviews-header">
-      <p class="section-eyebrow" data-scroll-reveal>Guest Voices</p>
-      <h2 class="section-title" data-scroll-reveal>What They Say</h2>
+      <p class="section-eyebrow light" data-scroll-reveal>Guest Voices</p>
+      <h2 class="section-title light" data-scroll-reveal>What They Say</h2>
       <div class="rating-summary" data-scroll-reveal>
         <div class="rating-big">4.2</div>
         <div class="rating-detail">
@@ -507,104 +699,145 @@
       </div>
     </div>
 
-    <div class="reviews-track-wrap">
-      <div class="reviews-track" id="reviewsTrack">
+    <!-- FULL CAROUSEL -->
+    <div class="carousel-container" id="reviewsCarousel" data-scroll-reveal>
+      <div class="carousel-track" id="carouselTrack">
 
         <div class="review-card">
+          <div class="rc-arch-top" aria-hidden="true"></div>
           <div class="rc-top">
             <div class="rc-stars">★★★★★</div>
             <div class="rc-source">Google</div>
+          </div>
+          <div class="rc-ornament" aria-hidden="true">
+            <svg width="80" height="10" viewBox="0 0 80 10" fill="none">
+              <line x1="0" y1="5" x2="30" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
+              <polygon points="40,1 43,5 40,9 37,5" fill="#F4A61B" opacity="0.55"/>
+              <line x1="50" y1="5" x2="80" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
+            </svg>
           </div>
           <p class="rc-text">"One of the best Mandi spots in Kollam. The Yemani Chicken Mandhi is absolutely unmatched — the slow-roasted aroma hits you before the dish even arrives."</p>
           <div class="rc-author">
             <div class="rc-avatar">I</div>
-            <div>
-              <strong>Imamudeen AR</strong>
-              <span>Local Guide</span>
-            </div>
+            <div><strong>Imamudeen AR</strong><span>Local Guide</span></div>
           </div>
         </div>
 
         <div class="review-card">
+          <div class="rc-arch-top" aria-hidden="true"></div>
           <div class="rc-top">
             <div class="rc-stars">★★★★★</div>
             <div class="rc-source">Zomato</div>
           </div>
+          <div class="rc-ornament" aria-hidden="true">
+            <svg width="80" height="10" viewBox="0 0 80 10" fill="none">
+              <line x1="0" y1="5" x2="30" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
+              <polygon points="40,1 43,5 40,9 37,5" fill="#F4A61B" opacity="0.55"/>
+              <line x1="50" y1="5" x2="80" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
+            </svg>
+          </div>
           <p class="rc-text">"Great experience — amazing food and service. Staff are extremely knowledgeable and make great recommendations. The ambience is very welcoming and charming."</p>
           <div class="rc-author">
             <div class="rc-avatar">A</div>
-            <div>
-              <strong>Abhinav KP</strong>
-              <span>Local Guide · 64 Reviews</span>
-            </div>
+            <div><strong>Abhinav KP</strong><span>Local Guide · 64 Reviews</span></div>
           </div>
         </div>
 
         <div class="review-card">
+          <div class="rc-arch-top" aria-hidden="true"></div>
           <div class="rc-top">
             <div class="rc-stars">★★★★★</div>
             <div class="rc-source">Google</div>
+          </div>
+          <div class="rc-ornament" aria-hidden="true">
+            <svg width="80" height="10" viewBox="0 0 80 10" fill="none">
+              <line x1="0" y1="5" x2="30" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
+              <polygon points="40,1 43,5 40,9 37,5" fill="#F4A61B" opacity="0.55"/>
+              <line x1="50" y1="5" x2="80" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
+            </svg>
           </div>
           <p class="rc-text">"We've ordered porotta and beef roast many times. It's very tasty — somewhere we feel that authentic Malabari flavour in the beef roast. Highly recommended!"</p>
           <div class="rc-author">
             <div class="rc-avatar">A</div>
-            <div>
-              <strong>Adila H A</strong>
-              <span>Regular Customer</span>
-            </div>
+            <div><strong>Adila H A</strong><span>Regular Customer</span></div>
           </div>
         </div>
 
         <div class="review-card">
+          <div class="rc-arch-top" aria-hidden="true"></div>
           <div class="rc-top">
             <div class="rc-stars">★★★★★</div>
             <div class="rc-source">Google</div>
+          </div>
+          <div class="rc-ornament" aria-hidden="true">
+            <svg width="80" height="10" viewBox="0 0 80 10" fill="none">
+              <line x1="0" y1="5" x2="30" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
+              <polygon points="40,1 43,5 40,9 37,5" fill="#F4A61B" opacity="0.55"/>
+              <line x1="50" y1="5" x2="80" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
+            </svg>
           </div>
           <p class="rc-text">"Huge variety of dishes while being very budget-friendly. The food is fresh, the service is quick, and the place has a great vibe. Will definitely come back."</p>
           <div class="rc-author">
             <div class="rc-avatar">M</div>
-            <div>
-              <strong>Maanas Manoj</strong>
-              <span>Local Guide · 155 Reviews</span>
-            </div>
+            <div><strong>Maanas Manoj</strong><span>Local Guide · 155 Reviews</span></div>
           </div>
         </div>
 
         <div class="review-card">
+          <div class="rc-arch-top" aria-hidden="true"></div>
           <div class="rc-top">
             <div class="rc-stars">★★★★★</div>
             <div class="rc-source">Justdial</div>
           </div>
+          <div class="rc-ornament" aria-hidden="true">
+            <svg width="80" height="10" viewBox="0 0 80 10" fill="none">
+              <line x1="0" y1="5" x2="30" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
+              <polygon points="40,1 43,5 40,9 37,5" fill="#F4A61B" opacity="0.55"/>
+              <line x1="50" y1="5" x2="80" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
+            </svg>
+          </div>
           <p class="rc-text">"Great ambience, good parking, AC seating, prompt service. The special Al Faham is super tasty. Good quantity and value for money. Zaitoon never disappoints."</p>
           <div class="rc-author">
             <div class="rc-avatar">N</div>
-            <div>
-              <strong>Naseer Nasar</strong>
-              <span>Verified Diner</span>
-            </div>
+            <div><strong>Naseer Nasar</strong><span>Verified Diner</span></div>
           </div>
         </div>
 
         <div class="review-card">
+          <div class="rc-arch-top" aria-hidden="true"></div>
           <div class="rc-top">
             <div class="rc-stars">★★★★★</div>
             <div class="rc-source">Google</div>
           </div>
+          <div class="rc-ornament" aria-hidden="true">
+            <svg width="80" height="10" viewBox="0 0 80 10" fill="none">
+              <line x1="0" y1="5" x2="30" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
+              <polygon points="40,1 43,5 40,9 37,5" fill="#F4A61B" opacity="0.55"/>
+              <line x1="50" y1="5" x2="80" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
+            </svg>
+          </div>
           <p class="rc-text">"Very tasty and palatable food. Staff are extremely polite. Rates are very reasonable. Zaitoon is our go-to for Mandi nights in Kollam."</p>
           <div class="rc-author">
             <div class="rc-avatar">H</div>
-            <div>
-              <strong>Hari Sankar</strong>
-              <span>Local Guide</span>
-            </div>
+            <div><strong>Hari Sankar</strong><span>Local Guide</span></div>
           </div>
         </div>
 
       </div>
 
-      <div class="reviews-nav">
-        <button class="rev-btn" id="revPrev">←</button>
-        <button class="rev-btn" id="revNext">→</button>
+      <!-- Carousel Controls -->
+      <div class="carousel-controls">
+        <button class="carousel-btn carousel-btn--prev" id="carouselPrev" aria-label="Previous">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M13,4 L7,10 L13,16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button class="carousel-btn carousel-btn--next" id="carouselNext" aria-label="Next">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M7,4 L13,10 L7,16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
       </div>
     </div>
 
@@ -630,15 +863,20 @@
   <!-- ═══════════════════════════════
        LOCATION
   ═══════════════════════════════ -->
-  <section class="location-section" id="location">
+  <div class="location-arch-transition" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,0 L0,30 Q360,60 720,40 Q1080,20 1440,30 L1440,0Z" fill="#E85D1E"/>
+      <path d="M0,30 Q360,60 720,40 Q1080,20 1440,30" stroke="#F4A61B" stroke-width="0.8" fill="none" opacity="0.3"/>
+    </svg>
+  </div>
 
+  <section class="location-section" id="location">
     <div class="location-header">
       <p class="section-eyebrow light" data-scroll-reveal>Find Us</p>
       <h2 class="section-title light" data-scroll-reveal>Come, Dine With Us</h2>
     </div>
 
     <div class="location-grid">
-
       <div class="location-info" data-scroll-reveal>
         <div class="loc-row">
           <div class="loc-icon">📍</div>
@@ -681,19 +919,46 @@
           referrerpolicy="no-referrer-when-downgrade"
           title="Zaitoon Location"
         ></iframe>
+        <!-- Arch overlay on map -->
+        <div class="map-arch-overlay" aria-hidden="true">
+          <svg viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,60 L0,30 Q200,0 400,30 L400,60Z" fill="rgba(61,26,8,0.15)"/>
+            <path d="M0,30 Q200,0 400,30" stroke="#F4A61B" stroke-width="1" fill="none" opacity="0.3"/>
+          </svg>
+        </div>
         <a class="map-overlay-btn" href="https://maps.google.com/?q=Zaitoon+Restaurant+Kollam" target="_blank">
           🗺️ Open in Google Maps
         </a>
       </div>
-
     </div>
-
   </section>
 
   <!-- ═══════════════════════════════
        FOOTER
   ═══════════════════════════════ -->
+  <!-- Arch into footer -->
+  <div class="footer-arch-top" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,80 L0,40 Q240,0 480,30 Q720,60 960,30 Q1200,0 1440,40 L1440,80Z" fill="#1C0A00"/>
+      <path d="M0,40 Q240,0 480,30 Q720,60 960,30 Q1200,0 1440,40" stroke="#F4A61B" stroke-width="0.7" fill="none" opacity="0.2"/>
+    </svg>
+  </div>
+
   <footer class="footer">
+    <!-- Islamic star pattern strip -->
+    <div class="footer-star-strip" aria-hidden="true">
+      <svg width="100%" height="24" viewBox="0 0 1440 24" fill="none" preserveAspectRatio="xMidYMid slice">
+        <line x1="0" y1="12" x2="1440" y2="12" stroke="#F4A61B" stroke-width="0.5" opacity="0.2"/>
+        <!-- Stars along the line -->
+        <g transform="translate(120,12)"><polygon points="0,-6 1.5,-2 6,-2 2.5,1 3.5,5 0,3 -3.5,5 -2.5,1 -6,-2 -1.5,-2" fill="#F4A61B" opacity="0.35"/></g>
+        <g transform="translate(360,12)"><polygon points="0,-6 1.5,-2 6,-2 2.5,1 3.5,5 0,3 -3.5,5 -2.5,1 -6,-2 -1.5,-2" fill="#F4A61B" opacity="0.35"/></g>
+        <g transform="translate(600,12)"><polygon points="0,-6 1.5,-2 6,-2 2.5,1 3.5,5 0,3 -3.5,5 -2.5,1 -6,-2 -1.5,-2" fill="#F4A61B" opacity="0.35"/></g>
+        <g transform="translate(720,12)"><polygon points="0,-8 2,-2.5 8,-2.5 3.5,1 5,7 0,4 -5,7 -3.5,1 -8,-2.5 -2,-2.5" fill="#E85D1E" opacity="0.5"/></g>
+        <g transform="translate(840,12)"><polygon points="0,-6 1.5,-2 6,-2 2.5,1 3.5,5 0,3 -3.5,5 -2.5,1 -6,-2 -1.5,-2" fill="#F4A61B" opacity="0.35"/></g>
+        <g transform="translate(1080,12)"><polygon points="0,-6 1.5,-2 6,-2 2.5,1 3.5,5 0,3 -3.5,5 -2.5,1 -6,-2 -1.5,-2" fill="#F4A61B" opacity="0.35"/></g>
+        <g transform="translate(1320,12)"><polygon points="0,-6 1.5,-2 6,-2 2.5,1 3.5,5 0,3 -3.5,5 -2.5,1 -6,-2 -1.5,-2" fill="#F4A61B" opacity="0.35"/></g>
+      </svg>
+    </div>
 
     <div class="footer-top">
       <div class="footer-brand">
@@ -703,7 +968,6 @@
           <a href="https://www.instagram.com/zaitoon_united.kollam" target="_blank" class="social-pill">📸 Instagram</a>
         </div>
       </div>
-
       <div class="footer-col">
         <h4>Menu</h4>
         <ul>
@@ -716,7 +980,6 @@
           <li>Kerala Porotta</li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h4>Experience</h4>
         <ul>
@@ -727,7 +990,6 @@
           <li>Home Delivery</li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h4>Connect</h4>
         <ul>
@@ -744,7 +1006,6 @@
       <p>© 2026 Zaitoon Restaurant, Kollam. All rights reserved.</p>
       <p class="footer-craft">Crafted with ❤️ in Kerala</p>
     </div>
-
   </footer>
 
   <!-- FLOATING CALL BTN (mobile) -->
