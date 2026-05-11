@@ -1172,6 +1172,12 @@ nav.light-section .nav-reserve{
   justify-content: center;
   overflow: hidden;
   background: #0e2c38;
+  opacity: 0;
+
+  animation:
+    heroFadeIn 1.2s ease forwards;
+
+  animation-delay: 2s;
 }
 
 .hero-grain {
@@ -5153,4 +5159,130 @@ color: transparent !important;
 .hero-line[data-line="3"]{
 
   letter-spacing: 1px;
+}
+
+
+/* ════════════════════════════════
+   CINEMA CURTAIN REVEAL
+════════════════════════════════ */
+
+.cinema-curtain{
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 999998;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      180deg,
+      #000 0%,
+      #140600 45%,
+      #1C0A00 100%
+    );
+
+  transform-origin: top;
+
+  animation:
+    curtainReveal 1.8s
+    cubic-bezier(0.76, 0, 0.24, 1)
+    forwards;
+
+  animation-delay: 1.8s;
+}
+
+/* GOLD SHIMMER */
+
+.cinema-curtain::after{
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(244,166,27,.14),
+      transparent
+    );
+
+  transform:
+    translateX(-100%);
+
+  animation:
+    shimmerSweep 1.2s ease forwards;
+
+  animation-delay: 2s;
+}
+
+@keyframes curtainReveal{
+
+  0%{
+
+    transform:
+      scaleY(1);
+
+    border-radius: 0;
+  }
+
+  65%{
+
+    transform:
+      scaleY(.12);
+
+    border-radius:
+      0 0 80px 80px;
+  }
+
+  100%{
+
+    transform:
+      scaleY(0);
+
+    border-radius:
+      0 0 140px 140px;
+
+    visibility: hidden;
+  }
+}
+
+@keyframes shimmerSweep{
+
+  to{
+
+    transform:
+      translateX(100%);
+  }
+}
+
+
+@keyframes heroFadeIn{
+
+  from{
+
+    opacity: 0;
+
+    transform:
+      scale(1.06);
+
+    filter:
+      blur(10px);
+  }
+
+  to{
+
+    opacity: 1;
+
+    transform:
+      scale(1);
+
+    filter:
+      blur(0);
+  }
 }
