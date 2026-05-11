@@ -42,6 +42,8 @@
     <button class="nav-burger" id="burger" aria-label="Menu">
       <span></span><span></span>
     </button>
+
+    <div class="glass-edge"></div>
   </nav>
 
   <!-- MOBILE MENU -->
@@ -65,9 +67,7 @@
        HERO
   ═══════════════════════════════ -->
   <section class="hero" id="home">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="https://videos.bravebrand.com/Creative%20Studio/hf_20260418_004933_1563f5ed-46fe-44f6-af7d-502e0ee3f87a.mp4" type="video/mp4" />
-    </video>
+    <div class="hero-image"></div>
     <div class="hero-grain"></div>
     <div class="hero-overlay"></div>
 
@@ -643,202 +643,103 @@
   </div>
 
   <section class="reviews-section" id="reviews">
-    <!-- Hanging lanterns in reviews -->
-    <div class="reviews-lanterns" aria-hidden="true">
-      <svg class="rev-lantern rev-lantern-l" viewBox="0 0 50 130" fill="none">
-        <line x1="25" y1="0" x2="25" y2="16" stroke="#F4A61B" stroke-width="1" opacity="0.6"/>
-        <rect x="17" y="12" width="16" height="6" rx="2" fill="#c94d17" opacity="0.8"/>
-        <path d="M9,26 Q5,44 5,62 Q5,80 25,85 Q45,80 45,62 Q45,44 41,26 Q35,17 25,17 Q15,17 9,26Z" fill="#c94d17" opacity="0.75"/>
-        <path d="M12,40 L38,40" stroke="#F4A61B" stroke-width="0.5" opacity="0.45"/>
-        <path d="M11,55 L39,55" stroke="#F4A61B" stroke-width="0.5" opacity="0.45"/>
-        <path d="M12,70 L38,70" stroke="#F4A61B" stroke-width="0.5" opacity="0.45"/>
-        <path d="M18,85 L16,98 Q25,104 34,98 L32,85Z" fill="#a83d10" opacity="0.85"/>
-        <circle cx="25" cy="103" r="3" fill="#F4A61B" opacity="0.85"/>
-        <ellipse cx="25" cy="57" rx="10" ry="16" fill="#F4A61B" opacity="0.1"/>
-      </svg>
-      <svg class="rev-lantern rev-lantern-r" viewBox="0 0 50 130" fill="none">
-        <line x1="25" y1="0" x2="25" y2="16" stroke="#F4A61B" stroke-width="1" opacity="0.6"/>
-        <rect x="17" y="12" width="16" height="6" rx="2" fill="#c94d17" opacity="0.8"/>
-        <path d="M9,26 Q5,44 5,62 Q5,80 25,85 Q45,80 45,62 Q45,44 41,26 Q35,17 25,17 Q15,17 9,26Z" fill="#c94d17" opacity="0.75"/>
-        <path d="M12,40 L38,40" stroke="#F4A61B" stroke-width="0.5" opacity="0.45"/>
-        <path d="M11,55 L39,55" stroke="#F4A61B" stroke-width="0.5" opacity="0.45"/>
-        <path d="M12,70 L38,70" stroke="#F4A61B" stroke-width="0.5" opacity="0.45"/>
-        <path d="M18,85 L16,98 Q25,104 34,98 L32,85Z" fill="#a83d10" opacity="0.85"/>
-        <circle cx="25" cy="103" r="3" fill="#F4A61B" opacity="0.85"/>
-        <ellipse cx="25" cy="57" rx="10" ry="16" fill="#F4A61B" opacity="0.1"/>
-      </svg>
-    </div>
-
-    <!-- Ornate arch frame for reviews header -->
-    <div class="reviews-arch-frame" aria-hidden="true">
-      <svg viewBox="0 0 500 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M50,100 L50,50 Q250,0 450,50 L450,100" stroke="#F4A61B" stroke-width="1" fill="none" opacity="0.2"/>
-        <path d="M80,100 L80,58 Q250,16 420,58 L420,100" stroke="#E85D1E" stroke-width="0.6" fill="none" opacity="0.15"/>
-        <g transform="translate(250,18)">
-          <polygon points="0,-14 3.5,-4 14,-4 6,2 9,12 0,6 -9,12 -6,2 -14,-4 -3.5,-4" fill="#F4A61B" opacity="0.5"/>
-        </g>
-        <!-- Side stars -->
-        <g transform="translate(90,52)" opacity="0.35">
-          <polygon points="0,-7 1.8,-2 7,-2 3,1 4.5,6 0,3.5 -4.5,6 -3,1 -7,-2 -1.8,-2" fill="#F4A61B"/>
-        </g>
-        <g transform="translate(410,52)" opacity="0.35">
-          <polygon points="0,-7 1.8,-2 7,-2 3,1 4.5,6 0,3.5 -4.5,6 -3,1 -7,-2 -1.8,-2" fill="#F4A61B"/>
-        </g>
-      </svg>
-    </div>
 
     <div class="reviews-header">
-      <p class="section-eyebrow light" data-scroll-reveal>Guest Voices</p>
-      <h2 class="section-title light" data-scroll-reveal>What They Say</h2>
-      <div class="rating-summary" data-scroll-reveal>
-        <div class="rating-big">4.2</div>
-        <div class="rating-detail">
-          <div class="stars-row">★★★★<span class="half-star">★</span></div>
-          <p>Based on 1,700+ reviews across platforms</p>
-        </div>
-      </div>
+      <p class="section-eyebrow light">Guest Reviews</p>
+      <h2 class="section-title light">
+        What People <em>Say</em>
+      </h2>
     </div>
 
-    <!-- FULL CAROUSEL -->
-    <div class="carousel-container" id="reviewsCarousel" data-scroll-reveal>
-      <div class="carousel-track" id="carouselTrack">
+    <div class="reviews-marquee">
 
+      <div class="reviews-track">
+
+        <!-- CARD -->
         <div class="review-card">
-          <div class="rc-arch-top" aria-hidden="true"></div>
-          <div class="rc-top">
-            <div class="rc-stars">★★★★★</div>
-            <div class="rc-source">Google</div>
-          </div>
-          <div class="rc-ornament" aria-hidden="true">
-            <svg width="80" height="10" viewBox="0 0 80 10" fill="none">
-              <line x1="0" y1="5" x2="30" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
-              <polygon points="40,1 43,5 40,9 37,5" fill="#F4A61B" opacity="0.55"/>
-              <line x1="50" y1="5" x2="80" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
-            </svg>
-          </div>
-          <p class="rc-text">"One of the best Mandi spots in Kollam. The Yemani Chicken Mandhi is absolutely unmatched — the slow-roasted aroma hits you before the dish even arrives."</p>
-          <div class="rc-author">
-            <div class="rc-avatar">I</div>
-            <div><strong>Imamudeen AR</strong><span>Local Guide</span></div>
-          </div>
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “Best Mandhi in Kollam. The rice alone deserves its own fan club.”
+          </p>
+          <span>— Ameen K.</span>
         </div>
 
         <div class="review-card">
-          <div class="rc-arch-top" aria-hidden="true"></div>
-          <div class="rc-top">
-            <div class="rc-stars">★★★★★</div>
-            <div class="rc-source">Zomato</div>
-          </div>
-          <div class="rc-ornament" aria-hidden="true">
-            <svg width="80" height="10" viewBox="0 0 80 10" fill="none">
-              <line x1="0" y1="5" x2="30" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
-              <polygon points="40,1 43,5 40,9 37,5" fill="#F4A61B" opacity="0.55"/>
-              <line x1="50" y1="5" x2="80" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
-            </svg>
-          </div>
-          <p class="rc-text">"Great experience — amazing food and service. Staff are extremely knowledgeable and make great recommendations. The ambience is very welcoming and charming."</p>
-          <div class="rc-author">
-            <div class="rc-avatar">A</div>
-            <div><strong>Abhinav KP</strong><span>Local Guide · 64 Reviews</span></div>
-          </div>
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “Afghani chicken was insanely soft. Felt premium.”
+          </p>
+          <span>— Shamil</span>
         </div>
 
         <div class="review-card">
-          <div class="rc-arch-top" aria-hidden="true"></div>
-          <div class="rc-top">
-            <div class="rc-stars">★★★★★</div>
-            <div class="rc-source">Google</div>
-          </div>
-          <div class="rc-ornament" aria-hidden="true">
-            <svg width="80" height="10" viewBox="0 0 80 10" fill="none">
-              <line x1="0" y1="5" x2="30" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
-              <polygon points="40,1 43,5 40,9 37,5" fill="#F4A61B" opacity="0.55"/>
-              <line x1="50" y1="5" x2="80" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
-            </svg>
-          </div>
-          <p class="rc-text">"We've ordered porotta and beef roast many times. It's very tasty — somewhere we feel that authentic Malabari flavour in the beef roast. Highly recommended!"</p>
-          <div class="rc-author">
-            <div class="rc-avatar">A</div>
-            <div><strong>Adila H A</strong><span>Regular Customer</span></div>
-          </div>
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “Finally a place that actually nails Arabic flavours.”
+          </p>
+          <span>— Fathima</span>
         </div>
 
         <div class="review-card">
-          <div class="rc-arch-top" aria-hidden="true"></div>
-          <div class="rc-top">
-            <div class="rc-stars">★★★★★</div>
-            <div class="rc-source">Google</div>
-          </div>
-          <div class="rc-ornament" aria-hidden="true">
-            <svg width="80" height="10" viewBox="0 0 80 10" fill="none">
-              <line x1="0" y1="5" x2="30" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
-              <polygon points="40,1 43,5 40,9 37,5" fill="#F4A61B" opacity="0.55"/>
-              <line x1="50" y1="5" x2="80" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
-            </svg>
-          </div>
-          <p class="rc-text">"Huge variety of dishes while being very budget-friendly. The food is fresh, the service is quick, and the place has a great vibe. Will definitely come back."</p>
-          <div class="rc-author">
-            <div class="rc-avatar">M</div>
-            <div><strong>Maanas Manoj</strong><span>Local Guide · 155 Reviews</span></div>
-          </div>
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “Interior, ambience, food — everything cinematic.”
+          </p>
+          <span>— Niyas</span>
         </div>
 
         <div class="review-card">
-          <div class="rc-arch-top" aria-hidden="true"></div>
-          <div class="rc-top">
-            <div class="rc-stars">★★★★★</div>
-            <div class="rc-source">Justdial</div>
-          </div>
-          <div class="rc-ornament" aria-hidden="true">
-            <svg width="80" height="10" viewBox="0 0 80 10" fill="none">
-              <line x1="0" y1="5" x2="30" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
-              <polygon points="40,1 43,5 40,9 37,5" fill="#F4A61B" opacity="0.55"/>
-              <line x1="50" y1="5" x2="80" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
-            </svg>
-          </div>
-          <p class="rc-text">"Great ambience, good parking, AC seating, prompt service. The special Al Faham is super tasty. Good quantity and value for money. Zaitoon never disappoints."</p>
-          <div class="rc-author">
-            <div class="rc-avatar">N</div>
-            <div><strong>Naseer Nasar</strong><span>Verified Diner</span></div>
-          </div>
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “The Al Faham had proper charcoal flavour. Rare stuff.”
+          </p>
+          <span>— Rizwan</span>
+        </div>
+
+        <!-- duplicate for infinite loop -->
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “Best Mandhi in Kollam. The rice alone deserves its own fan club.”
+          </p>
+          <span>— Ameen K.</span>
         </div>
 
         <div class="review-card">
-          <div class="rc-arch-top" aria-hidden="true"></div>
-          <div class="rc-top">
-            <div class="rc-stars">★★★★★</div>
-            <div class="rc-source">Google</div>
-          </div>
-          <div class="rc-ornament" aria-hidden="true">
-            <svg width="80" height="10" viewBox="0 0 80 10" fill="none">
-              <line x1="0" y1="5" x2="30" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
-              <polygon points="40,1 43,5 40,9 37,5" fill="#F4A61B" opacity="0.55"/>
-              <line x1="50" y1="5" x2="80" y2="5" stroke="#E85D1E" stroke-width="0.7" opacity="0.4"/>
-            </svg>
-          </div>
-          <p class="rc-text">"Very tasty and palatable food. Staff are extremely polite. Rates are very reasonable. Zaitoon is our go-to for Mandi nights in Kollam."</p>
-          <div class="rc-author">
-            <div class="rc-avatar">H</div>
-            <div><strong>Hari Sankar</strong><span>Local Guide</span></div>
-          </div>
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “Afghani chicken was insanely soft. Felt premium.”
+          </p>
+          <span>— Shamil</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “Finally a place that actually nails Arabic flavours.”
+          </p>
+          <span>— Fathima</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “Interior, ambience, food — everything cinematic.”
+          </p>
+          <span>— Niyas</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “The Al Faham had proper charcoal flavour. Rare stuff.”
+          </p>
+          <span>— Rizwan</span>
         </div>
 
       </div>
 
-      <!-- Carousel Controls -->
-      <div class="carousel-controls">
-        <button class="carousel-btn carousel-btn--prev" id="carouselPrev" aria-label="Previous">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M13,4 L7,10 L13,16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-        <div class="carousel-dots" id="carouselDots"></div>
-        <button class="carousel-btn carousel-btn--next" id="carouselNext" aria-label="Next">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M7,4 L13,10 L7,16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-      </div>
     </div>
 
   </section>

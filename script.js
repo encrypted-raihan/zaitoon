@@ -601,3 +601,32 @@ if (heroVideo) {
 })();
 
 
+
+
+
+const navbar = document.getElementById("navbar");
+
+const lightSections = document.querySelectorAll(
+  ".story-section, .menu-section, .gallery-section"
+);
+
+function updateNavbarContrast() {
+
+  let isOnLight = false;
+
+  lightSections.forEach(section => {
+
+    const rect = section.getBoundingClientRect();
+
+    if (rect.top <= 120 && rect.bottom >= 120) {
+      isOnLight = true;
+    }
+
+  });
+
+  navbar.classList.toggle("light-section", isOnLight);
+}
+
+window.addEventListener("scroll", updateNavbarContrast);
+
+updateNavbarContrast();
