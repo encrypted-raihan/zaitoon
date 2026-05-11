@@ -220,45 +220,10 @@
       let targetFrame = 0;
 
       for (let i = 1; i <= frameCount; i++) {
-
-        images.push(null);
-
-      }
-
-      const loadImage = (index) => {
-
-        if (images[index]) return;
-
         const img = new Image();
-
-        img.decoding = "async";
-
-        img.loading = "eager";
-
-        img.src = currentFrame(index + 1);
-
-        images[index] = img;
-      };
-
-      /* LOAD FIRST FEW IMMEDIATELY */
-
-      for (let i = 0; i < 12; i++) {
-
-        loadImage(i);
-
+        img.src = currentFrame(i);
+        images.push(img);
       }
-
-    /* LOAD REST IN BACKGROUND */
-
-    requestIdleCallback(() => {
-
-      for (let i = 12; i < frameCount; i++) {
-
-        loadImage(i);
-
-      }
-
-    });
 
       const render = (index) => {
         const img = images[index];
@@ -308,7 +273,7 @@
         ctx.imageSmoothingEnabled = true;
         ctx.imageSmoothingQuality = "high";
 
-        ctx.filter = "brightness(.92) contrast(1.08)";
+        ctx.filter = "brightness(.92) contrast(1.08) saturate(1.08)";
         ctx.globalAlpha = 0.96;
 
         ctx.drawImage(img, x, y, drawWidth, drawHeight);
@@ -333,13 +298,21 @@
         render(Math.round(currentFrameIndex));
       };
 
-        loadImage(0);
-
-        images[0].onload = () => {
-
-          resizeCanvas();
-
-        };
+      const waitForImages = async () => {
+        await Promise.all(
+          images.map(
+            (img) =>
+              new Promise((resolve) => {
+                if (img.complete && img.naturalWidth) {
+                  resolve();
+                } else {
+                  img.onload = resolve;
+                  img.onerror = resolve;
+                }
+              })
+          )
+        );
+      };
 
       waitForImages().then(() => {
         resizeCanvas();
