@@ -4768,3 +4768,119 @@ nav.light-section .nav-reserve{
   }
 
 }
+
+
+/* ═══════════════════════════════
+   MALABAR + MIDDLE EAST HERO FONT
+═══════════════════════════════ */
+/* ═══════════════════════════════
+   MALABAR TYPOGRAPHY
+═══════════════════════════════ */
+
+.malabar-line{
+
+  font-family:
+    "Angkor",
+    serif;
+
+  font-weight: 400;
+
+  text-transform: uppercase;
+
+  letter-spacing: .03em;
+
+  background:
+  linear-gradient(
+    180deg,
+    #9BE15D 0%,
+    #2F5F1B 100%,
+    #518E2E 45%
+  );
+
+-webkit-background-clip: text;
+
+-webkit-text-fill-color: transparent;
+
+background-clip: text;
+
+color: transparent !important;
+
+  line-height: .92;
+
+  position: relative;
+
+  display: inline-block;
+
+  transform:
+    translateY(-4px);
+
+  text-shadow:
+    0 4px 16px rgba(0,0,0,.22),
+    0 0 24px rgba(108,166,50,.08);
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+  .malabar-line{
+
+    letter-spacing: .01em;
+
+    transform:none;
+  }
+
+}
+
+
+/* MIDDLE EAST */
+
+.arabic-line{
+
+  font-family:
+    "Anton",
+    "Teko",
+    sans-serif;
+
+  font-weight: 900;
+
+  letter-spacing: -.03em;
+
+  text-transform: uppercase;
+
+  transform:
+    skewX(-3deg);
+
+  background:
+    linear-gradient(
+      to bottom,
+      #ffd46d 0%,
+      #f4a61b 45%,
+      #d98900 100%
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+
+  text-shadow:
+    0 6px 22px rgba(0,0,0,.22);
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+  .malabar-line{
+
+    letter-spacing: 0;
+  }
+
+  .arabic-line{
+
+    transform:none;
+  }
+
+}
