@@ -309,7 +309,7 @@ nav.scrolled {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: #0a0400;
+  background: #164759;
 }
 
 .hero-video {
@@ -353,17 +353,25 @@ nav.scrolled {
   }
 
   /* dark cinematic fade */
-  .hero-overlay {
-    background:
-      linear-gradient(
-        to bottom,
-        rgba(0,0,0,.45) 0%,
-        rgba(0,0,0,.25) 40%,
-        rgba(0,0,0,.72) 100%
-      );
-  }
+.hero-overlay {
+  background:
+    radial-gradient(
+      ellipse at 50% 110%,
+      rgba(37,150,190,.75) 0%,
+      transparent 65%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,.30) 0%,
+      rgba(0,0,0,.10) 40%,
+      rgba(0,0,0,.55) 100%
+    );
+}
 
-  /* hero text spacing */
+}
+
+
+ /* hero text spacing */
   .hero-title-wrap {
     margin-top: 6vh;
     padding-bottom: 12vh;
@@ -374,7 +382,10 @@ nav.scrolled {
     line-height: .88;
   }
 
-}
+  .hero-title {
+    padding-top: 5vh;
+  }
+
 
 .hero-grain {
   position: absolute;
@@ -1457,6 +1468,8 @@ nav.scrolled {
     padding-bottom: env(safe-area-inset-bottom);
   }
 }
+
+
 
 
 

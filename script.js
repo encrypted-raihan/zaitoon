@@ -359,11 +359,11 @@ if (heroVideo) {
 
   const animate = () => {
 
-    current += (target - current) * 0.08;
+    current += (target - current) * 0.05;
 
     // Slow cinematic background movement
     heroVideo.style.transform = `
-      translate3d(0, ${current * 0.15}px, 0)
+      translate3d(0, ${current * 0.12}px, 0)
       scale(1.15)
     `;
 
