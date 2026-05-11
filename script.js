@@ -92,12 +92,10 @@
     }
 
     if (heroImage) {
-      currentParallax += ((scrollY * 0.12) - currentParallax) * 0.08;
-      heroImage.style.transform = `translate3d(0, ${currentParallax}px, 0) scale(1.08)`;
+      heroImage.style.transform = `scale(1.08)`;
     }
-
-    ticking = false;
-  };
+        ticking = false;
+      };
 
   window.addEventListener(
     "scroll",
@@ -222,10 +220,45 @@
       let targetFrame = 0;
 
       for (let i = 1; i <= frameCount; i++) {
-        const img = new Image();
-        img.src = currentFrame(i);
-        images.push(img);
+
+        images.push(null);
+
       }
+
+      const loadImage = (index) => {
+
+        if (images[index]) return;
+
+        const img = new Image();
+
+        img.decoding = "async";
+
+        img.loading = "eager";
+
+        img.src = currentFrame(index + 1);
+
+        images[index] = img;
+      };
+
+      /* LOAD FIRST FEW IMMEDIATELY */
+
+      for (let i = 0; i < 12; i++) {
+
+        loadImage(i);
+
+      }
+
+    /* LOAD REST IN BACKGROUND */
+
+    requestIdleCallback(() => {
+
+      for (let i = 12; i < frameCount; i++) {
+
+        loadImage(i);
+
+      }
+
+    });
 
       const render = (index) => {
         const img = images[index];
@@ -275,7 +308,7 @@
         ctx.imageSmoothingEnabled = true;
         ctx.imageSmoothingQuality = "high";
 
-        ctx.filter = "brightness(.92) contrast(1.08) saturate(1.08) blur(.15px)";
+        ctx.filter = "brightness(.92) contrast(1.08)";
         ctx.globalAlpha = 0.96;
 
         ctx.drawImage(img, x, y, drawWidth, drawHeight);
@@ -300,21 +333,13 @@
         render(Math.round(currentFrameIndex));
       };
 
-      const waitForImages = async () => {
-        await Promise.all(
-          images.map(
-            (img) =>
-              new Promise((resolve) => {
-                if (img.complete && img.naturalWidth) {
-                  resolve();
-                } else {
-                  img.onload = resolve;
-                  img.onerror = resolve;
-                }
-              })
-          )
-        );
-      };
+        loadImage(0);
+
+        images[0].onload = () => {
+
+          resizeCanvas();
+
+        };
 
       waitForImages().then(() => {
         resizeCanvas();
