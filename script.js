@@ -221,7 +221,7 @@
     const ctx = canvas.getContext("2d");
 
     if (ctx) {
-      const frameCount = 240;
+      const frameCount = window.innerWidth <= 768 ? 90 : 140;
       const currentFrame = (index) =>
         `assets/frames/frame_${String(index).padStart(4, "0")}.jpg`;
 
@@ -283,13 +283,7 @@
         ctx.imageSmoothingEnabled = true;
         ctx.imageSmoothingQuality = "high";
 
-        ctx.filter = "brightness(.92) contrast(1.08) saturate(1.08)";
-        ctx.globalAlpha = 0.96;
-
         ctx.drawImage(img, x, y, drawWidth, drawHeight);
-
-        ctx.globalAlpha = 1;
-        ctx.filter = "none";
       };
 
       const resizeCanvas = () => {
