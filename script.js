@@ -11,7 +11,17 @@
   const loader = document.getElementById("loader");
 
   const hideLoader = () => {
-    if (loader) loader.classList.add("done");
+
+    if (!loader) return;
+
+    loader.style.transform = "scale(1.05)";
+
+    setTimeout(() => {
+
+      loader.classList.add("done");
+
+    }, 200);
+
   };
 
   if (loader) {
